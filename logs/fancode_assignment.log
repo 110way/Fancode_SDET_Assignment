@@ -1,0 +1,1074 @@
+2024-12-17 23:29:53,827 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:29:53,855 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:29:53,933 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:29:53,934 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:29:53,934 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:29:53,938 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:29:53,938 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:29:53,939 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /users HTTP/1.1
+2024-12-17 23:29:53,939 [main] DEBUG org.apache.http.wire -  >> "GET /users HTTP/1.1[\r][\n]"
+2024-12-17 23:29:53,941 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:29:53,941 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:29:53,941 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:29:53,942 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:29:53,942 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:29:53,942 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:29:53,942 [main] DEBUG org.apache.http.headers - >> GET /users HTTP/1.1
+2024-12-17 23:29:53,942 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:29:53,942 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:29:53,942 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:29:53,943 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:29:53,943 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:29:53,960 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:29:53,961 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 17:59:53 GMT[\r][\n]"
+2024-12-17 23:29:53,961 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:29:53,961 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:29:53,961 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:29:53,962 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D"}]}[\r][\n]"
+2024-12-17 23:29:53,962 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D[\r][\n]"
+2024-12-17 23:29:53,962 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:29:53,962 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:29:53,962 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:29:53,962 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 999[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734419864[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"[\r][\n]"
+2024-12-17 23:29:53,963 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "Age: 786[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38cf412bf53bc2-BOM[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=7007&min_rtt=7007&rtt_var=3503&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=179&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:29:53,964 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:53,965 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 17:59:53 GMT
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D"}]}
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 999
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734419864
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:29:53,966 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Age: 786
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38cf412bf53bc2-BOM
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:29:53,967 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=7007&min_rtt=7007&rtt_var=3503&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=179&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:29:53,971 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:29:53,976 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:29:53,977 [main] DEBUG org.apache.http.wire -  << "737[\r][\n]"
+2024-12-17 23:29:53,978 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x95][0x98][o[0xe3]8[0x12][0x85][0xdf][0xe7]W[0x10]y[0xda][0x1]F[0x82].[0xd4]m[0x9f][0xdc][0x9d]d[0xba][0xb7][0x93][0xf4][0x6]q[0xef]4[0x6][0x83]A@K[0x15][0x89]m[0x8a][0xf4][0x92][0x94][0x1d]e1[0xff]}[0x8b]v.[0x8e]-[0xdb][0x9a][0x7][0xc3][0x92][0xa8]k[0xf1][0xd3]9[0xa7][0xf4][0xc7]O[0x84][0xfc][0xf][0x84][0x9c][0xf1][0xea][0xec][0x9f]$[0xfc]e[0xb3]"Y[0xb][0xb8]zv[\r]LJ [0x9f]4kX{[0xf6]<[0xd8][0x19][0xd0]/;|[0xd4]`_[0xb6]C[0xcb][0xb8]p[0x1b][0xa7]\[0x96][0xa0]a[0xc2][0x16][0x9a][0xb][0xc6][0x9f]^[0xf6]`U[0xa5][0xc1][0x18][0xdc]gsQ[0xdc]d[0xac][0x6]<[0x5][0x1e]u[0xd5][0x9]f[0xc8]5[0xaf][0x9b][0x97]3[0xba][0xe1][0x8e][0xdb][0xf5][0x85]>,[0xac]O[0x92]$}[0x1b]*[0xb9][0xed][0xdd][0xc8][0xa7][0x15][0xc8][0x99][0xd2][0xaa][0xab][0x9b][0xb7][0xc1]'[0xbe](U[0xb5]>[0xb2][0x88][0x8a]"[0xf7][0xe2]<[0xa3]o[0xc3]5[0xa8][0xad][0x9b][0xc0][\r][0x82][0xad][0xef][0xc1][0x8b]3?[0xe][0x93][0xe2]uO7$k7[0x94][0x87]~H[0x8b][0xf4][0xec]y[0xe0][0xaf][0xf5][0xff]_[0xcf][0xf][0xb6]h[0x94]\_,[0xf4][0xb2],[0xf0][0xb2]8[0xf5][0xf2] [0xe][0xc9]c[0x92]R[0x1a][0xbd]<[0xfe][\n]"
+2024-12-17 23:29:53,978 [main] DEBUG org.apache.http.wire -  << "f[0xe6][0xf9]q[0x1a].*[0xa8][0x99][0xae]|[0xa5][0xeb][0x97][0xf1]R[0xb5][0xb]&[0xfb][0xed][0xf2][0xbc][0xd4][0xf9]N[0xb5][0xac][0xee]@3[0xef]\+[0xc9][0xb6][0xaa][0xc0]l[0xd9][0xdc]6[0x9a][0x99][0xf5]~7[0x9d][0xb0][0xdc][0x13][0xac][0xc7][0xfa]W[0xa4][0x14][0x1c][0xa4][0xf5]p[0xbe][0x96][0xa0][0x89][0x84]N3[0xe1]I[0xd8][0xaa][0xef][0xcc][0xac][0xef][0x86]i[0x89][0xf3]B4[0xe0][0xb8][0xe5]-[0x10][0xf0]Z[0xa6][0xe7]`[0xcd][0xe6]y[0xdd][0xd3][0xae][0x9f]u[0x1b][0x96]h[0x7][0x96]K[0xbd][0xe4][0x92]|V+[0x10]b[0x88][0x95][0xf][0xd2]b[0x95],[0x16]`[0xf][0x98][0x6]1c[0x93][0x16][0x4]7[0x86][0xf9]v9[\n]"
+2024-12-17 23:29:53,978 [main] DEBUG org.apache.http.wire -  << "[0x98][0xdf]xi[0x95]&[0xb7][0x82]qi[0x6][0x90][0x99][0xba][0x5][0x92]g[0xc5]>3[0xdf][0xb9]Q[0xf3]~[0xd6][0xe9]C[0xcc][0x4]I[0x9a][0xe2]Tf[0xe1][0x8]fh[0xec][0x17]I0[0xc4][0x8c][0x17]S[0x9f][0xa6]a~[0x2][0x9a] [0xc][0xbc][0xb4][0x88][0xbc]4)b[0xf2][0x18][0x14]a[0x94][0xc] [0xc3]$3[0x96][0x19][0xce][0xfc][0xb7][0x19]<[0x86][0xcc][0x5][0x94]s[0xb5]B^[0xb8][0xb1][0x7]y[0xb9][0xd5][0x8a][0x95][0x96]/[0x81]T[0xbc]rK%)[0x95][0xb4]\[0xd6] [0xcb]~[0x97][0x13][0xd3]K[0xd0]5[0x2]bJ&[0xd8]L[0xe0]B[0xb7]X[0x88][0xde]+[0x9b][0xf5]$[0x1c][0x86]%[0xde][0x81][0xe5]\@[0xb][0xee]B@>[0xb2][0xae]l[0x86][0x80][0x99][0xb2][0x96]I[0xdb][0xb0]=^[0xbe]2[0xdc]*'=[0x18][0x90][0xef][0xeb]q[0x14][0x98][0xb][0xd4][0x8][0xa7]1[0x97][0x8f][0x16][0xa4][0xe1]J[0x1e][0x86][0x86]f[0xfb][0xd0][0xdc][0x94]W [0x9f]84l[0x9]r[0x10][0x9b][0xa4]H[0x8a][0xc0][0xa3]a[0x92][0x8d][0xc0]&[0xcd][0xfd]4[0xc][0xa2]!lh[0xe6][0x7]i[0x12][0x9f][0xd4][0x1a][0x9a][0xc6]^[0x18][0xc5][0x1e][0xa5][0xaf][0xf7][0xbb]M[0x8c]f-[0xd7][0xca][0xe7][0xf2]A[0xfd]-[0x89][0xf9][0xc2]J53[0xdb][0xe5][0xd9][0xa1][0xe6]WV[0x2][0xb1][0x8a]<[0xb8][0xff][0x19][0xe8]4[0xee][0x80]z[0xc3][0xa5][0x5][0xed]6[0xee][0x82][0x3][0x1e][0xc8][\r].V[0xe3][0x9e]5b[0xc6][0x90][0x1b][0x8e][0x87][0xe1]4[0x1c][0xe3][0x86][0xee]ps[0xcb][0xac][0xe6]%g[0xe4][0x1a][0x9f][0x93][0x95][0xf3]!n[0xae][0x98][0xe6][0xce][0xb7][0xf6][0xb8][0xf9][0xd2][0x89][0xf5][0x80][0xff][0xef]s[0x85]z2W[0xba][0xdf]V[0xe0][0xa3][0xf8]|VP[0xa3][0x8c][0xde][0xb0]Wy[0xdb]3(|[0x8b][0xf7][0xb9][0x99][0xaa][0xce]6[0xe4]R,[0xb9][0x19][0xa6]&.[0xc2][0xc2][0xa3][0xd1][0x18]j[0xa2][0xc2][0xa7]I6[0x8]M[0x98]R[0x1f][0xad].8A[\r]-[0x90][0x19][0xf4][0xa8]"[0x8d]Pl[0xc2]WG[0xdd][0x6]g[0xce][0x4]l[0xfb][0xf6]Qjf [0xbc]s[0x85]f[0xa1][0xfb][0x83][0xc0]ll[0xc9][0xf2][0xb5]+=[0x81]VH[0x8f]@[0xd4]0'[0x90][0x85]VU[0xe7]4[0xc8][0x95]k[0x87][0x1b][0xa4][0x5]_T[0xc7][0x8]);[0xeb]d[0xc9][0x83][0xaa][0x6][0x82][0xf7]J[0x9c][0xab][0xf1][0x12][0x8e][0xc1][0x93][0xec][0x8a]N[0x3][0xc2]@O.88[0x8a][0x6]E[0xe7][0x8a][0xb5][0xfa][0xf5][0xf5]~C[0xe7][0xba]+[0xb9][0xba][0xff][0xc][0xeb][0x9b]@r[0x10]#[0xe]~[0xc9]F[0x91]3[0x9d]s[0x1][0x86]|gb~[0xd8][0xa8][0xe2]$[0xdc]g[0xe7]N[0x99]R[0xc1][0x92][0xc3]j[0x10][0x9d]8[0x8e][0xd2]xL[0xac][0x9][0xfd]<[0x8c][0x86],*[0x8d][0xfc]$[0xc6][0x88]r[0x1c][0x9a]D[0x9][0xfd][0xb9]H([0xaa]M^[0xc][0x0]Sa[0x9d]t9Zj[0xae][0x0]P[0xc]4[0xb9][0xbe]>?[0x88][0xcc]pN[0xbc][0x12]-[0x2]'[\n]"
+2024-12-17 23:29:53,978 [main] DEBUG org.apache.http.wire -  << "[0x85][0x6][0x1][0xf2][0x9e][0x99][0xb1][0xc4]([0xd1][0xd9]w[0xfa][0xbd][0xc1]E[0xc3][0xf2]y[0xc4]y[0x14][0xc8][\n]"
+2024-12-17 23:29:53,979 [main] DEBUG org.apache.http.wire -  << "[0xf]A[0xe5][0xa9][0x88][0xe9][0x8d][0x85][0xf6][0x18]*[0xe9][0xe]*7[0xda][0xf8][0xe4][0x2]p[0x96][\r][0x99][0x96][\r][\n]"
+2024-12-17 23:29:53,979 [main] DEBUG org.apache.http.wire -  << "[0xc7][0xab][0x8b][0xbe][0xc3][0xe5][0x1a][0xd4]B[0x89]J[0xdd][0xbf][0x5][0xde][0xc0]A1[0x12][0xd0][0xdf]_[0xb0][0xb2][0x99][0xfc]`f[0x1][0xfa]][0x95][0x8e]r[0xf3]U[0xe9][0x19]h[0x14]Z[0xc]}[0xc6] x[0x87]t[0x7][0xf3][0xc7]![0xdd]9o\[0x0][0xe8][0x7][0xf1][0x89][0xe2]$H[0xbc]0[0x8e][0xc7][0xf8]U[0x16][0xfa]4,[0xb2][0x1][0x86]p$[0xa3][0xd9][0xa9][0x94][0x83]v[0x95]e^[0x11]'[0x1e][0xba]kN[0x1e]S[0x1a][0x7][0x3]()[0xc1]Ffb[0xd4]p[0xc3]+L[0x10][0xde][0xb5]*[0xe7][0x18][0x15][0xe][0xb2]4[0xed]e[0xd9]`n[0xe6][0x6][0xe5]g[0xa6][0xac]U[0xad]'\[0xf4]8mX\J[0xb5]d[0xeb][0x84]4[0xd2][0xb1][0xb2][0x1d][0x92][0xae]:m[0x11][0xa2][0xef][0x80][0xd9]V[0xb2]A[0x88].[0xc5][0xaa][0x97][0xfe]F%[0xf6][0x0][0xfa][0x86]q[0xba][0xf7]7[0xe6]3[0x99]q[0xb7]2[0xb6][0xa5][0xba][0x83]G[0xf2]M[0xbb][0xf3][0x1c][0x12][0x9d]([0x1f][0x0][0xc7]E[0xf8][0xd6][0xc1]3lWy[0x1e][0xa0][0x10][0x4]Eq[0x1a][0x9a][0x88][0xfa]y[0x81][0xf9]w[0x9f][0x99][0x8][0x15][0xa9][0xc8][0xe9][0x9]f[0xa2]0[0xc0]$[0x94]aP[0x8a][0x87][0xba](p[0x9e][0xea][0xf3]1[0x92][0xf3]E5[0xd2]`#[0xab][0xba][0xc5]AL[0x10][0xa8][0x7]^c[0x93][0xe4]&[0xbe]u[0x96][0xd5]B[0x85]Q[0x3]S[0xf7][0xdc]{Pz[0x1f][0x13]L[0xc9][0xe0][0x2][\r]j[\r][0x82][0x84][0xed][0xae]q[0xad][0x93][0xc5][0x8a][0x83]>[0xc6]H[0xbe][0xc3][0xc8]W4#[0xe5][0xa2][0xe9]]'[0x95]x0[0x15]2[0xca]5[0xf9]m[0x8][0x96][0x1b][0xf6][0x88][0xf7]u[0xff][0x15][;[0xb5][0xda][0xa3]e[0xda][0x80]^)UMP1X[0xab]d[0xe5][0xb7]0[0x8a][0x95]K![0xcc]JiT[0x8c]i[0xd7][0xb6]|[0xa8][0x7][0xdf] [0x93]E[0x3][\r][0xd5][0x7][0xc1]{v[0xd0][0xa6]h[0x12][0xa6]#h[0xf1]B[0xea][0xc7].[0xc1][0xc][0xa5][0x9b]([0xf0][0xb3]4[0xcb]N[0x0][0x93][0xe4][0xa9][0x8f][0x9][0xc7]O[0xb][0xea][0xd2][\r][0x1d]R[0x98][0x1f][0xac][0xec][0xb1][0xad]@[0xf7]V[0xed][0x8]r>[0xcc]\[0xed]m[0xd3][0x9f][0xa0][0xe7]_[0xed]b[0xd3][0xd3][0xa0][0xc6][0x18][0xc0].[0xaa]b[0xba]w[0xdd]T[0x9][0x8b][0xbd][0x8e][0xfb]U_`[0xd3][0x8b][0xac][0x17]G[0x80]S[0xec][0x80][0xf3]I[0xa0]E1r[0x7][0x8][0x10]:[0xc5][0x10]/[0x17] [0x16][\r][0x1f]H[0xc3][0xe7][0xd8][0xb3][0xb5][0xf7]7[0xe5][0x5][0xe8][0x16]y[0x9b]T[0xd8]an[0xbd]L[0xc7][)[0xd6][0xe3]eo[0x99][0x9e][0x1f][0xe4][0x84][0xd2][0x1]N>2$L[0x9][0xd5][0x2]6[0xdf][0xc3][0xa6][0x94][0xa5][0xb4]H0[0xb1][0x4][0xe3][0xf4]%[0xa5][[0x9][0xe8]][0x1c][0xce][0xfd]<[0xc7][0xb4]r"[0xd9]dY[0xf2]s[0x91][0xa5]^[0x9a][0x15][0x94]<R[0xe4]l([0x11][0xe3]4jV[0x8d]$[0xe6]we,a[0x18];[0xa6]j[0xfb][0xc3][0xc4][0xae])[0xad]8[0xae][0xaf]!p-7[0x82][0xd0]ag[0xd1]{3[0xe6]\[\n]"
+2024-12-17 23:29:53,979 [main] DEBUG org.apache.http.wire -  << "S[0xf1][0xf]([0xf7][0xb8]au[0xad][0xa1]v[0x8a][0xf3][0xf6][0xad][0xc6]B[0xd9][0xa0]j[0xa8][0x9a][0x1f][\r][0xc3]ap[0xa8][0x5]g[0xe4][0xa2][0xfb][0xd8][0xfd][0xb7][0x83]A[0xb9]Q[0xd8]L5[0xfe][0xd4]2[0xf7][0xf9]f[0xf][0xa2];[0xe8][0xfd][V[0xe1];RO[0xe6][0xd8]w!B[0xa3]?[0xf8]1[0x14]9 [0xdf]:-[0x17]|[0xe][0x7]A[\n]"
+2024-12-17 23:29:53,979 [main] DEBUG org.apache.http.wire -  << "[0x8b]|[0x1f][0xa4][0xe7][0xf6][0xef] EqH[0xa3][0xdc][0x8b][0xa2]t[0xcc][0x17][0x9c]8[0xf7][0xa3]8O[0x7]0J2?[0x8a][0xe2]S[0xf1]8[0x88][0xa8][0x97]R[0xf7][0x91]1[0xa0][0x3][0xf0][0xb0]v[0x86]j[0xc]#[0xbf][0xdb]<[0xb7][0x99][0xc7][0xb2][0xf1][0xb9][0x8b][0xc5]L`[0xc8][0xad][0x8][0xb4][0xb][0xb4]k,|}[0xc4][0xa7],[0xd3]5[0xd8][0xed]D[0xdc]b[0x9d][0xc4]6.?[0xfd][0xf9][0xb5]s%[0xe7][\r][0x16][0x0][0x0]"
+2024-12-17 23:29:53,980 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:53,980 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:29:53,980 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:53,980 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:29:54,037 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2954b5ea
+2024-12-17 23:29:54,038 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:29:54,085 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:29:54,085 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:29:54,093 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:29:54,093 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:29:54,093 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:29:54,093 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=1 HTTP/1.1
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=1 HTTP/1.1[\r][\n]"
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:29:54,094 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:29:54,095 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:29:54,095 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=1 HTTP/1.1
+2024-12-17 23:29:54,095 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:29:54,095 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:29:54,095 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:29:54,095 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:29:54,095 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:29:54,114 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:29:54,114 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 17:59:53 GMT[\r][\n]"
+2024-12-17 23:29:54,114 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D"}]}[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 998[\r][\n]"
+2024-12-17 23:29:54,115 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Etag: W/"8df-BI33H3JkF5x/twg0KTe/qy2U04I"[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:29:54,116 [main] DEBUG org.apache.http.wire -  << "Age: 786[\r][\n]"
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38cf4219353cee-BOM[\r][\n]"
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=8131&min_rtt=8131&rtt_var=4065&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 17:59:53 GMT
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:29:54,117 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D"}]}
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 998
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Etag: W/"8df-BI33H3JkF5x/twg0KTe/qy2U04I"
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:29:54,118 [main] DEBUG org.apache.http.headers - << Age: 786
+2024-12-17 23:29:54,119 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:29:54,119 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38cf4219353cee-BOM
+2024-12-17 23:29:54,119 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:29:54,119 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=8131&min_rtt=8131&rtt_var=4065&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:29:54,119 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:29:54,119 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:29:54,119 [main] DEBUG org.apache.http.wire -  << "21c[\r][\n]"
+2024-12-17 23:29:54,120 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xa5][0x95]Kn[0xdb]@[0x10]D[0xf7]>ECk/,'v>7[0xf0][0x19][0x82],[0x9a]d[0xcb]n`~[0x9e][0x8f][0x10] [0xc8][0xdd]SC[0xca]2A2[0xe][0x81]Y[0x10][0xd0]PR[0xbf][0xe9][0xea][0xa9][0x9a][0x1f]7D[0xbf][0xf1][0x10][0x1d]J[0x92][0xf8]4[0x1c][0xbe][0xd3][0xf1]vz[0xa1][0xf3]E[0xd6]l[0x4][0xeb][0xc3] F[0xfa]\[0x12]q[0xc9][0xf5][0x11]{[0xb8][0xfc][0xa4][0xf7]6[0x18][0xc9]R[0xff]vb[0x93][0x4][0xaf][0xff][0xdc][0xfe][0xf]p[0xbf][0x4][0xbc][0x16]M[0x84][0xda][0x8e]-[0xca][0xf4]j[0xb0][0x94]L[0xfe]t[0xd2]^[0x99][0xf0]u[0x1b][0xf0][0xd3][0x12]x*[0xcf][0xca][0x99][0xce][0xe2][0x14]H[0xab][0xae][0xa4]6[0xc2][0xe7]%[0x1][0xdb][0xf]>FOP[0xb][0x1f]x[0xab]|[0x8e]e_[0xf5][0x87]eu[0xc3][0x9d][0x8f][0xea]S[0xdd][0xbc]7F3T[0x2][0x11][0xed]X[0xa8][0xc5]I[0x89][0x7][\r][0x9a]z[0xad][0xe2]1[0x85][0xe8][0xcf]:[0x88][0xcb][0xa4][0xc6][0x94][0xc6][0xf1]=n[0x8c][0x8f][0x8a]1[0xd8]L[0xe4][0xac][0xde]I[0x85]v%[\r]xs[0xf6][0xa6][0x84][0xcc]Pa[0xda][0x89][0xb7]N[0x1b][0xb5][0xfe][0xb2][0xe4][0xa3]'O[0xf2]+[0xc8][0xa0][0x99][0xa9][0xf7].[0x9]D[0xc8]%NHum[0xbc][0xaf][0xeb]~[0xfd][0xbb][0xbe]o[0x9a][0xdb]z[0x80][0xb9]k[0x9a][0xf3][0xb7]%[0x9][0xc3][0x95][0x84][0xe1][\n]"
+2024-12-17 23:29:54,120 [main] DEBUG org.apache.http.wire -  << "[0x5][0x89])T7dxCC[0xda]<P[0xfb]{:[0xde]m[0x8b][0x98][0xf2]u[0x86][0x83]7>[0x8a]}-2[0xc9]hY[0xb1][0x1e]C[0xa0][0xa9][0xc9][0xe3]*_[0xce][0x2][0x9f]D[0x89][0xc5]^[0xdc]R[0xf][0xcf][0xc4]o#[0xad][0x82][0xa6][\n]"
+2024-12-17 23:29:54,120 [main] DEBUG org.apache.http.wire -  << "[0x7]R[0x10]c[0xc4][\r][0x80][0xd4] @[0xee]h[0xda]L[0x98][0xfd][0xa4]U[0xc2][0xc0][0x8d]3[0x1]][0xb5]G[0xe3][0xc4]V[0x11]3[0xef]#[0x15][0xf7][0x6][0xc4][0x84]b[0xff][0xa2][0x19][0x91][0xed][0xaf][0xf6][0xdb][0xf6][0xfc][0xfe][0xfe]V[0x9][0xc4][0xdd][0xac]6[0xb1]E[0xbf][0x97][0xf5][0xa6][0xbb][0xf7][0x93]V[0xe9][0xc2]}_[0x10]thR|[0xba]^[0xf]I[0xd1][0xb0][0x8c][0xd7][0xd1],c[0xda][0xd0][0xab]`[0xa9]F[0x9f]Em[0xbd][0x7][0x1d][0xb2]v[0x84][0xfe][0xe3]R[0xda]O[[0xc5][0xca]8>[0x88]YM8[0xf]1[0xe1][0xf7][0x90]WG}1[0xa1][0xf5],}[0x10]4[0xa3]E[0xe6][0xaa][0x8e]f[0xc][0x1c]u[0xdc][0xcc][0xb8]I[0x18][0xe6]EMS[0xfb][0xf7][0xab][0x0][0x9a]n[0x10][0xe7];L[0xd7]hW3!qP\Z[0x82][0xb4]%[0x1f][0x10]K[0xe3][0xd8]?[0xe2][0xde][0xfc][0xfc][0xb][0xf7][0xbf][0x99][0xc7][0xdf][0x8][0x0][0x0]"
+2024-12-17 23:29:54,120 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,120 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:29:54,120 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,120 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:29:54,122 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@154bd49b
+2024-12-17 23:29:54,122 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:29:54,133 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:29:54,134 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:29:54,142 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=5 HTTP/1.1
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=5 HTTP/1.1[\r][\n]"
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:29:54,143 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:29:54,144 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=5 HTTP/1.1
+2024-12-17 23:29:54,144 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:29:54,144 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:29:54,144 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:29:54,144 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:29:54,144 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:29:54,163 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 17:59:54 GMT[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 997[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:29:54,164 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Etag: W/"932-JiHKfrNyHWI5zxhO4x1+znFqBcQ"[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Age: 785[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38cf426cc93fc6-BOM[\r][\n]"
+2024-12-17 23:29:54,165 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=6930&min_rtt=6930&rtt_var=3465&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 17:59:54 GMT
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 997
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:29:54,166 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << Etag: W/"932-JiHKfrNyHWI5zxhO4x1+znFqBcQ"
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << Age: 785
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38cf426cc93fc6-BOM
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:29:54,167 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=6930&min_rtt=6930&rtt_var=3465&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:29:54,168 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:29:54,168 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:29:54,168 [main] DEBUG org.apache.http.wire -  << "22f[\r][\n]"
+2024-12-17 23:29:54,168 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad]U[0xcb][0x8e][0x13]1[0x10][0xbc][0xef]W[0xb4]r[0xde][0xc3].[0xb0][0xb0][0xe1][0xf][0xf8][0x6][0xc4][0xc1][0xb1]{[0xa1]%?[0x6][0xbb][0x1d]!![0xfe][0x9d][0xf2][0xcc]l[0x92][0x1d]G"[0x92][0x91][0x92][0x83][0xad][0xc4][0xd5]U]][0xfd][0xf5][0x8e][0xe8]7[0xbe]D[0xbb]Z8q[0xbb][0xcf][0xf4]t[0xbf]\H;<?[0xae]'[0x15][0xf5][0x8c][0x8b]][0xa9][0xc5][0xca]$J?[0xab][0x90]&5a[0xb7][0xfe][0xc4][0xa6]0yVn[0xff][0xd3]\[0x19][0xb7][0xee][0xff][0x9][0xf0]n[0xb]pL[0xbe]Nj[0x94][0xb]q[\r][0xb4][0x1e]qPrb[0xd5]\[0x83]{1[0xbe][0xdc][0x88][0xf7]~[0x8b][0x7][0x1e][0x8e][0x3][0x19][0xa5][0xcc][0x19][0x80]8[0x3][0xec][0x17][0x99][0xaa]Tf[0x9e][0xa3][0x14]?[0xf4][0x1a]F[0xa5]#g[0x1]M[0x80][0x1][0xe8]Dz[0x90][0xdd][0xd3][0x16][0x8a][0xe7]F[0x19]2[0x8e][0xa4]([0xd3]U[0xf9]n[0xa7][0xf2]q[0xfb][0xbe]D+[0xae][0xd1]ij[0x19][0x9e][0xb8][0xe9][0xc6][0x83][0x82]}[0xda][0xa2]xS[0x9d][0x89]*s{[0xc][0x13]{[0xf9][0xce][0xd1][0x9][0xd9][0x14][0xb][0xe3]Jk^x[0xf2],l[0xfa][0x1f]U<w[0xce]D[0xbf]f~[0xb0][0x87][0xe5][0x9][0x98]B[0xde][0x1c]R[0x96]TL[0x80]Y [0x83][0xf1][0xd2][0xc][0xd3][0xea][0xc0][0xc7]X[[0xcb]R[0xf8]`c[0xf7][0x9d][0x87][0xb8][\r] jI!6[0xc3][0xea][0x10][0xd9][0xfd][0xc3][0xf6][0xfd][0x90]<[0x17][0x15][0x10][0xc6][0xf3]r[0xc9][0x84][0x94]#7[0xc1]][0xf2])s[0x18][0xc6][0xee]2&V[0xef][0xcd]2[0x88][0x97][\r]^[0xfc][0xd5]h[0x8b]C[0xb]&vr=[0xe]n[0x87][0xee][0xd2]G[0xe2]*[0xe8][0xb9][0xb1]c[0x8]][0xde]$'[0x89][0xa4]f~[0xc3][0xed],7[0xf8][0x1d]jq[0xf0]Pd[0xcb][0xa5][0xcc]![0x81][0x9b][0xc5][0xdf][0xcd]dc[0x5]ui[0xf4]b[0xac]x0[0xe][0xa8]l[0xd5][0x18][0xd5]xA5c[0xa6][0xdd]witd[0xf];[0xfd][0x10][0xdf][0x86][0xe3]LYjQ[0x8c]l)5`[0xaa][\r][0x88][0x87][0x4][0xba][0x9][0xf6][0x1e][0xe3][0xda][0xc5]UL[0x7]0=[0xed]0W[0xad][0x4]H[0xcb]Q[0xb0][0x1][0xca][0x84]H[0x86][0xa3][0xcb]i[0xe9][0xc][0xf2][0xef]rl[0x9e][0x18]L[0xd0]Ejp*[0x8b][0xa5][0x9b]#[0xd6][0xf4][0x18][0x84][0xed][0x82][0xcb][0xf1]A[0xda][0xa2][0xb9][0x1c][0xe2][0xaa][0xb3][0xc2][0xaf][0xcd]_[0xba]2[0x8f]\1[0x93]p[0xc4][0xae]x[0xeb][0xbf][0xb1]Nt[0xf9][0x15][0xe1]|[0xa6][0x8b]e[0x9f][0x1][0x93][0xe2][0xe0][0x2]||[0xe8][0x82][0xec][0x9c][0xd5][0xf3]vXp[0x9b][0xe2][0xaf][0x9]B[0xcd][0x95][0xb7]-[0xe0][0xbb]o[0x1][0xe7]o[0x89][0xbc]2[0x9][0x0][0x0]"
+2024-12-17 23:29:54,168 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,169 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:29:54,169 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,169 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:29:54,170 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@2c58dcb1
+2024-12-17 23:29:54,171 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:29:54,180 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:29:54,180 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=10 HTTP/1.1
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=10 HTTP/1.1[\r][\n]"
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:29:54,189 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=10 HTTP/1.1
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:29:54,190 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:29:54,207 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:29:54,207 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 17:59:54 GMT[\r][\n]"
+2024-12-17 23:29:54,207 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:29:54,207 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:29:54,207 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 996[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:29:54,208 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "Etag: W/"94b-Xf3KAbsgAZYN4iY133g5Nn+yLLE"[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "Age: 786[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38cf42b8b647e3-BOM[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=6946&min_rtt=6946&rtt_var=3473&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=189&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:29:54,209 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 17:59:54 GMT
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 996
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Etag: W/"94b-Xf3KAbsgAZYN4iY133g5Nn+yLLE"
+2024-12-17 23:29:54,210 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.headers - << Age: 786
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38cf42b8b647e3-BOM
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=6946&min_rtt=6946&rtt_var=3473&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=189&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:29:54,211 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.wire -  << "238[\r][\n]"
+2024-12-17 23:29:54,211 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad][0x96]In[0x1b]A[0xc]E[0xf7]>[0x5][0xa1][0xb5][0x17][0xb2]3Y[0xb9]A[0xce][0x10]d[0xc1][0xee][0xa6][0x4][0x2]5[0xa9][0x6]A@[0x90][0xbb][0xe7]WkL[0x97][0x13][0xd8][0xa8][0x0][0x12][0xa0]nH[0xfd][0xeb][0x92][0x8f][0xfa][0xfe]@[0xf4][0x13]o[0xa2]UI[0x12][0xbf]M[0xab][0xaf][0xf4][0xb4]~<[0xdd][0xd1][0xf9][0xea][0xe5][0xe9]|[0x99]5[0x1b][0xc1][0x9d]U[0xc9]4[0x96][0xa0][0x93]f[0xce]BI[0xf6]E[0x89][0x8d][0xee][0xb][[0xda][0x96][0x1d][0x93]e[0xf5]Q[0xd2][0xea][0xfc][0xc3][0xd1][0xdb]`$K}[0xdc][0x96]M[0x12][0xdc][0xfe][0xf5][0xf8][0x6][0xe5][0xe7][0xa5][0xb2][0xba][0x83][0xb8][0x8c]gSb[0x9][0x82]c[0xd8]}[0x11][0x92]L[0x8c]C[0xa9]1[0xc5][0x92]8[0xb5][0xaf])[0xe7]X[0xde],[0xfc]a)[0xec][0xad][0xd3]D[0xae][0x18][0xc3]$[0x10][0xb9][0xd8][0x9d]4eucV[0xdf]+[0xf9]q)i[0xbd][0x11]<[0x9c][0x13]Y?)[0x5][0x89][[0x89][0xe2][0xa0]X?[0xa7][0xa0][0xa3]r[0xd6][0xfe][0x90]?-[0x85][0xf][0xde][0x94]PK[0x9b]`o[0x7][0xdf]I[0xad]O[0xa8][0xf3]D[0x93]7>[0xea]P[0x12]1RVB[0x6][0x12]yN[0xbf][0xfb][0x1c][0x9f][0x97][0xe7][0x90]c0:[0xf2][0xe0][0x9][0xfe]=![0xc][0x14][0xba][[0xe6][0xcb]Rf[0xf4][0xae][0xb6]pq[0xb9][0xc4][0xb3][0xad][0xe0][0xab][0xe7][0xd2][0x9f][0xed]K[0x93][0xad][0x18]r[0xde][0xd1] [0x9c]Y[0xaa][0xa7][0xde][0xbe][0xd9]4~[0x8a][0x9]hRE[0x91]0[0x17][0xd7]b[0xda][0xbf][0x84][0xf7][0xe][0xad][0xcd]z[0xa9][0xc5][0xe3]X[0x12]#)J[0xea]0[0x80]%e[0xbf]T=J[0x1c]+)[0xd4];[0xe9][0x1d][0xcc]M[0xc3]"H[0x84]KK[0xe6][0xca][0x82][0xdb]D[0xd2]ih[0xe7]$[0xd4][0x6][0x1][0xaf][0xe8][0xf4]u[0xa1][0xdb]p[0x5][0x8e][0x98][0xa3][0x12]{O[0xd6][0xb0][\n]"
+2024-12-17 23:29:54,212 [main] DEBUG org.apache.http.wire -  << "@[0xc2]x[0xa4]k3-[0x92]8%v[0x9b][0xb5][0xde]^[0xdb]4[0xcc][0x8a][0x12]A[0xaa]I[0x6][0x5]&[0xee]KRy-[0x0][0xa9][0xca]%[0x10][0xbe][0x8f][0x8d]{[0xa3]hPV[0xd1][0x81]8[0xe][0x12]=l[0xe7]k[0xfa][0xd2]m[0xba][0x81][0xd7][0xc9][0xb4][0x1c][0xa9][0xfa][0x3][0xa0]!e[0xe0][0x9f][0xaf][0xfe][0xe7]V[0xf9]_Eo[0x98][0xf5]'L[0xe0][0x19]/[0xac]DxF[0xf]h][0x1a][0xaf]z~[0x8f]f[0x3][0xb0]{H[0xef][0x8b][0x7]_[0x86][0xda][0xf6]\[0x83][0x98][0xd7]d[0xaf]bC14[0xd0]y[0xae]*[0x94][0xe7]F[0xbe][0xc2][0xba]W[0xac][0xe1][0x99][0xab];[0x1e][0x95][0x8c]pb[0xc][0x16]`[0x1d]u[0xfc][0xc5][0xd8]9[0xee][0xc4][0xc9][0xf3][0xba][0x1][0x9a][0x6][0xe0][0x8c][0x18][0xb][0xb6]6[0xcf][0xdd]&[0x84][0xe5]6[0xeb][0xc3][0x8f][0xdf][0x16][0x9f][0x1a]nK[0x9][0x0][0x0]"
+2024-12-17 23:29:54,212 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,212 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:29:54,212 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:29:54,212 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:29:54,213 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@680a66dd
+2024-12-17 23:29:54,213 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:53,886 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:54,057 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:54,132 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:54,136 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:54,136 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:54,137 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:54,137 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:54,138 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /users HTTP/1.1
+2024-12-17 23:37:54,138 [main] DEBUG org.apache.http.wire -  >> "GET /users HTTP/1.1[\r][\n]"
+2024-12-17 23:37:54,140 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:54,144 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:54,144 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:54,145 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:54,145 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:54,145 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:54,145 [main] DEBUG org.apache.http.headers - >> GET /users HTTP/1.1
+2024-12-17 23:37:54,145 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:54,146 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:54,146 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:54,147 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:54,148 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:54,269 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:54,271 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:54 GMT[\r][\n]"
+2024-12-17 23:37:54,271 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:54,271 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:54,271 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:54,271 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D"}]}[\r][\n]"
+2024-12-17 23:37:54,271 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 999[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734419864[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:54,272 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:54,273 [main] DEBUG org.apache.http.wire -  << "Age: 1267[\r][\n]"
+2024-12-17 23:37:54,274 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:54,274 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38dafa7a08f383-BOM[\r][\n]"
+2024-12-17 23:37:54,274 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:54,274 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=7745&min_rtt=7745&rtt_var=3872&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=179&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:54,274 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,275 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:54,275 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:54,275 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:54 GMT
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D"}]}
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 999
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734419864
+2024-12-17 23:37:54,276 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Age: 1267
+2024-12-17 23:37:54,277 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:54,278 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38dafa7a08f383-BOM
+2024-12-17 23:37:54,278 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:54,278 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=7745&min_rtt=7745&rtt_var=3872&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=179&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:54,284 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:54,292 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:54,292 [main] DEBUG org.apache.http.wire -  << "737[\r][\n]"
+2024-12-17 23:37:54,293 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x95][0x98][o[0xe3]8[0x12][0x85][0xdf][0xe7]W[0x10]y[0xda][0x1]F[0x82].[0xd4]m[0x9f][0xdc][0x9d]d[0xba][0xb7][0x93][0xf4][0x6]q[0xef]4[0x6][0x83]A@K[0x15][0x89]m[0x8a][0xf4][0x92][0x94][0x1d]e1[0xff]}[0x8b]v.[0x8e]-[0xdb][0x9a][0x7][0xc3][0x92][0xa8]k[0xf1][0xd3]9[0xa7][0xf4][0xc7]O[0x84][0xfc][0xf][0x84][0x9c][0xf1][0xea][0xec][0x9f]$[0xfc]e[0xb3]"Y[0xb][0xb8]zv[\r]LJ [0x9f]4kX{[0xf6]<[0xd8][0x19][0xd0]/;|[0xd4]`_[0xb6]C[0xcb][0xb8]p[0x1b][0xa7]\[0x96][0xa0]a[0xc2][0x16][0x9a][0xb][0xc6][0x9f]^[0xf6]`U[0xa5][0xc1][0x18][0xdc]gsQ[0xdc]d[0xac][0x6]<[0x5][0x1e]u[0xd5][0x9]f[0xc8]5[0xaf][0x9b][0x97]3[0xba][0xe1][0x8e][0xdb][0xf5][0x85]>,[0xac]O[0x92]$}[0x1b]*[0xb9][0xed][0xdd][0xc8][0xa7][0x15][0xc8][0x99][0xd2][0xaa][0xab][0x9b][0xb7][0xc1]'[0xbe](U[0xb5]>[0xb2][0x88][0x8a]"[0xf7][0xe2]<[0xa3]o[0xc3]5[0xa8][0xad][0x9b][0xc0][\r][0x82][0xad][0xef][0xc1][0x8b]3?[0xe][0x93][0xe2]uO7$k7[0x94][0x87]~H[0x8b][0xf4][0xec]y[0xe0][0xaf][0xf5][0xff]_[0xcf][0xf][0xb6]h[0x94]\_,[0xf4][0xb2],[0xf0][0xb2]8[0xf5][0xf2] [0xe][0xc9]c[0x92]R[0x1a][0xbd]<[0xfe][\n]"
+2024-12-17 23:37:54,293 [main] DEBUG org.apache.http.wire -  << "f[0xe6][0xf9]q[0x1a].*[0xa8][0x99][0xae]|[0xa5][0xeb][0x97][0xf1]R[0xb5][0xb]&[0xfb][0xed][0xf2][0xbc][0xd4][0xf9]N[0xb5][0xac][0xee]@3[0xef]\+[0xc9][0xb6][0xaa][0xc0]l[0xd9][0xdc]6[0x9a][0x99][0xf5]~7[0x9d][0xb0][0xdc][0x13][0xac][0xc7][0xfa]W[0xa4][0x14][0x1c][0xa4][0xf5]p[0xbe][0x96][0xa0][0x89][0x84]N3[0xe1]I[0xd8][0xaa][0xef][0xcc][0xac][0xef][0x86]i[0x89][0xf3]B4[0xe0][0xb8][0xe5]-[0x10][0xf0]Z[0xa6][0xe7]`[0xcd][0xe6]y[0xdd][0xd3][0xae][0x9f]u[0x1b][0x96]h[0x7][0x96]K[0xbd][0xe4][0x92]|V+[0x10]b[0x88][0x95][0xf][0xd2]b[0x95],[0x16]`[0xf][0x98][0x6]1c[0x93][0x16][0x4]7[0x86][0xf9]v9[\n]"
+2024-12-17 23:37:54,293 [main] DEBUG org.apache.http.wire -  << "[0x98][0xdf]xi[0x95]&[0xb7][0x82]qi[0x6][0x90][0x99][0xba][0x5][0x92]g[0xc5]>3[0xdf][0xb9]Q[0xf3]~[0xd6][0xe9]C[0xcc][0x4]I[0x9a][0xe2]Tf[0xe1][0x8]fh[0xec][0x17]I0[0xc4][0x8c][0x17]S[0x9f][0xa6]a~[0x2][0x9a] [0xc][0xbc][0xb4][0x88][0xbc]4)b[0xf2][0x18][0x14]a[0x94][0xc] [0xc3]$3[0x96][0x19][0xce][0xfc][0xb7][0x19]<[0x86][0xcc][0x5][0x94]s[0xb5]B^[0xb8][0xb1][0x7]y[0xb9][0xd5][0x8a][0x95][0x96]/[0x81]T[0xbc]rK%)[0x95][0xb4]\[0xd6] [0xcb]~[0x97][0x13][0xd3]K[0xd0]5[0x2]bJ&[0xd8]L[0xe0]B[0xb7]X[0x88][0xde]+[0x9b][0xf5]$[0x1c][0x86]%[0xde][0x81][0xe5]\@[0xb][0xee]B@>[0xb2][0xae]l[0x86][0x80][0x99][0xb2][0x96]I[0xdb][0xb0]=^[0xbe]2[0xdc]*'=[0x18][0x90][0xef][0xeb]q[0x14][0x98][0xb][0xd4][0x8][0xa7]1[0x97][0x8f][0x16][0xa4][0xe1]J[0x1e][0x86][0x86]f[0xfb][0xd0][0xdc][0x94]W [0x9f]84l[0x9]r[0x10][0x9b][0xa4]H[0x8a][0xc0][0xa3]a[0x92][0x8d][0xc0]&[0xcd][0xfd]4[0xc][0xa2]!lh[0xe6][0x7]i[0x12][0x9f][0xd4][0x1a][0x9a][0xc6]^[0x18][0xc5][0x1e][0xa5][0xaf][0xf7][0xbb]M[0x8c]f-[0xd7][0xca][0xe7][0xf2]A[0xfd]-[0x89][0xf9][0xc2]J53[0xdb][0xe5][0xd9][0xa1][0xe6]WV[0x2][0xb1][0x8a]<[0xb8][0xff][0x19][0xe8]4[0xee][0x80]z[0xc3][0xa5][0x5][0xed]6[0xee][0x82][0x3][0x1e][0xc8][\r].V[0xe3][0x9e]5b[0xc6][0x90][0x1b][0x8e][0x87][0xe1]4[0x1c][0xe3][0x86][0xee]ps[0xcb][0xac][0xe6]%g[0xe4][0x1a][0x9f][0x93][0x95][0xf3]!n[0xae][0x98][0xe6][0xce][0xb7][0xf6][0xb8][0xf9][0xd2][0x89][0xf5][0x80][0xff][0xef]s[0x85]z2W[0xba][0xdf]V[0xe0][0xa3][0xf8]|VP[0xa3][0x8c][0xde][0xb0]Wy[0xdb]3(|[0x8b][0xf7][0xb9][0x99][0xaa][0xce]6[0xe4]R,[0xb9][0x19][0xa6]&.[0xc2][0xc2][0xa3][0xd1][0x18]j[0xa2][0xc2][0xa7]I6[0x8]M[0x98]R[0x1f][0xad].8A[\r]-[0x90][0x19][0xf4][0xa8]"[0x8d]Pl[0xc2]WG[0xdd][0x6]g[0xce][0x4]l[0xfb][0xf6]Qjf [0xbc]s[0x85]f[0xa1][0xfb][0x83][0xc0]ll[0xc9][0xf2][0xb5]+=[0x81]VH[0x8f]@[0xd4]0'[0x90][0x85]VU[0xe7]4[0xc8][0x95]k[0x87][0x1b][0xa4][0x5]_T[0xc7][0x8]);[0xeb]d[0xc9][0x83][0xaa][0x6][0x82][0xf7]J[0x9c][0xab][0xf1][0x12][0x8e][0xc1][0x93][0xec][0x8a]N[0x3][0xc2]@O.88[0x8a][0x6]E[0xe7][0x8a][0xb5][0xfa][0xf5][0xf5]~C[0xe7][0xba]+[0xb9][0xba][0xff][0xc][0xeb][0x9b]@r[0x10]#[0xe]~[0xc9]F[0x91]3[0x9d]s[0x1][0x86]|gb~[0xd8][0xa8][0xe2]$[0xdc]g[0xe7]N[0x99]R[0xc1][0x92][0xc3]j[0x10][0x9d]8[0x8e][0xd2]xL[0xac][0x9][0xfd]<[0x8c][0x86],*[0x8d][0xfc]$[0xc6][0x88]r[0x1c][0x9a]D[0x9][0xfd][0xb9]H([0xaa]M^[0xc][0x0]Sa[0x9d]t9Zj[0xae][0x0]P[0xc]4[0xb9][0xbe]>?[0x88][0xcc]pN[0xbc][0x12]-[0x2]'[\n]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "[0x85][0x6][0x1][0xf2][0x9e][0x99][0xb1][0xc4]([0xd1][0xd9]w[0xfa][0xbd][0xc1]E[0xc3][0xf2]y[0xc4]y[0x14][0xc8][\n]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "[0xf]A[0xe5][0xa9][0x88][0xe9][0x8d][0x85][0xf6][0x18]*[0xe9][0xe]*7[0xda][0xf8][0xe4][0x2]p[0x96][\r][0x99][0x96][\r][\n]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "[0xc7][0xab][0x8b][0xbe][0xc3][0xe5][0x1a][0xd4]B[0x89]J[0xdd][0xbf][0x5][0xde][0xc0]A1[0x12][0xd0][0xdf]_[0xb0][0xb2][0x99][0xfc]`f[0x1][0xfa]][0x95][0x8e]r[0xf3]U[0xe9][0x19]h[0x14]Z[0xc]}[0xc6] x[0x87]t[0x7][0xf3][0xc7]![0xdd]9o\[0x0][0xe8][0x7][0xf1][0x89][0xe2]$H[0xbc]0[0x8e][0xc7][0xf8]U[0x16][0xfa]4,[0xb2][0x1][0x86]p$[0xa3][0xd9][0xa9][0x94][0x83]v[0x95]e^[0x11]'[0x1e][0xba]kN[0x1e]S[0x1a][0x7][0x3]()[0xc1]Ffb[0xd4]p[0xc3]+L[0x10][0xde][0xb5]*[0xe7][0x18][0x15][0xe][0xb2]4[0xed]e[0xd9]`n[0xe6][0x6][0xe5]g[0xa6][0xac]U[0xad]'\[0xf4]8mX\J[0xb5]d[0xeb][0x84]4[0xd2][0xb1][0xb2][0x1d][0x92][0xae]:m[0x11][0xa2][0xef][0x80][0xd9]V[0xb2]A[0x88].[0xc5][0xaa][0x97][0xfe]F%[0xf6][0x0][0xfa][0x86]q[0xba][0xf7]7[0xe6]3[0x99]q[0xb7]2[0xb6][0xa5][0xba][0x83]G[0xf2]M[0xbb][0xf3][0x1c][0x12][0x9d]([0x1f][0x0][0xc7]E[0xf8][0xd6][0xc1]3lWy[0x1e][0xa0][0x10][0x4]Eq[0x1a][0x9a][0x88][0xfa]y[0x81][0xf9]w[0x9f][0x99][0x8][0x15][0xa9][0xc8][0xe9][0x9]f[0xa2]0[0xc0]$[0x94]aP[0x8a][0x87][0xba](p[0x9e][0xea][0xf3]1[0x92][0xf3]E5[0xd2]`#[0xab][0xba][0xc5]AL[0x10][0xa8][0x7]^c[0x93][0xe4]&[0xbe]u[0x96][0xd5]B[0x85]Q[0x3]S[0xf7][0xdc]{Pz[0x1f][0x13]L[0xc9][0xe0][0x2][\r]j[\r][0x82][0x84][0xed][0xae]q[0xad][0x93][0xc5][0x8a][0x83]>[0xc6]H[0xbe][0xc3][0xc8]W4#[0xe5][0xa2][0xe9]]'[0x95]x0[0x15]2[0xca]5[0xf9]m[0x8][0x96][0x1b][0xf6][0x88][0xf7]u[0xff][0x15][;[0xb5][0xda][0xa3]e[0xda][0x80]^)UMP1X[0xab]d[0xe5][0xb7]0[0x8a][0x95]K![0xcc]JiT[0x8c]i[0xd7][0xb6]|[0xa8][0x7][0xdf] [0x93]E[0x3][\r][0xd5][0x7][0xc1]{v[0xd0][0xa6]h[0x12][0xa6]#h[0xf1]B[0xea][0xc7].[0xc1][0xc][0xa5][0x9b]([0xf0][0xb3]4[0xcb]N[0x0][0x93][0xe4][0xa9][0x8f][0x9][0xc7]O[0xb][0xea][0xd2][\r][0x1d]R[0x98][0x1f][0xac][0xec][0xb1][0xad]@[0xf7]V[0xed][0x8]r>[0xcc]\[0xed]m[0xd3][0x9f][0xa0][0xe7]_[0xed]b[0xd3][0xd3][0xa0][0xc6][0x18][0xc0].[0xaa]b[0xba]w[0xdd]T[0x9][0x8b][0xbd][0x8e][0xfb]U_`[0xd3][0x8b][0xac][0x17]G[0x80]S[0xec][0x80][0xf3]I[0xa0]E1r[0x7][0x8][0x10]:[0xc5][0x10]/[0x17] [0x16][\r][0x1f]H[0xc3][0xe7][0xd8][0xb3][0xb5][0xf7]7[0xe5][0x5][0xe8][0x16]y[0x9b]T[0xd8]an[0xbd]L[0xc7][)[0xd6][0xe3]eo[0x99][0x9e][0x1f][0xe4][0x84][0xd2][0x1]N>2$L[0x9][0xd5][0x2]6[0xdf][0xc3][0xa6][0x94][0xa5][0xb4]H0[0xb1][0x4][0xe3][0xf4]%[0xa5][[0x9][0xe8]][0x1c][0xce][0xfd]<[0xc7][0xb4]r"[0xd9]dY[0xf2]s[0x91][0xa5]^[0x9a][0x15][0x94]<R[0xe4]l([0x11][0xe3]4jV[0x8d]$[0xe6]we,a[0x18];[0xa6]j[0xfb][0xc3][0xc4][0xae])[0xad]8[0xae][0xaf]!p-7[0x82][0xd0]ag[0xd1]{3[0xe6]\[\n]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "S[0xf1][0xf]([0xf7][0xb8]au[0xad][0xa1]v[0x8a][0xf3][0xf6][0xad][0xc6]B[0xd9][0xa0]j[0xa8][0x9a][0x1f][\r][0xc3]ap[0xa8][0x5]g[0xe4][0xa2][0xfb][0xd8][0xfd][0xb7][0x83]A[0xb9]Q[0xd8]L5[0xfe][0xd4]2[0xf7][0xf9]f[0xf][0xa2];[0xe8][0xfd][V[0xe1];RO[0xe6][0xd8]w!B[0xa3]?[0xf8]1[0x14]9 [0xdf]:-[0x17]|[0xe][0x7]A[\n]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "[0x8b]|[0x1f][0xa4][0xe7][0xf6][0xef] EqH[0xa3][0xdc][0x8b][0xa2]t[0xcc][0x17][0x9c]8[0xf7][0xa3]8O[0x7]0J2?[0x8a][0xe2]S[0xf1]8[0x88][0xa8][0x97]R[0xf7][0x91]1[0xa0][0x3][0xf0][0xb0]v[0x86]j[0xc]#[0xbf][0xdb]<[0xb7][0x99][0xc7][0xb2][0xf1][0xb9][0x8b][0xc5]L`[0xc8][0xad][0x8][0xb4][0xb][0xb4]k,|}[0xc4][0xa7],[0xd3]5[0xd8][0xed]D[0xdc]b[0x9d][0xc4]6.?[0xfd][0xf9][0xb5]s%[0xe7][\r][0x16][0x0][0x0]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:54,294 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,295 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:54,350 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@abff8b7
+2024-12-17 23:37:54,350 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:54,391 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:54,391 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:54,400 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:54,400 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:54,400 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:54,400 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:54,400 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:54,400 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=1 HTTP/1.1
+2024-12-17 23:37:54,400 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=1 HTTP/1.1[\r][\n]"
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=1 HTTP/1.1
+2024-12-17 23:37:54,401 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:54,402 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:54,402 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:54,402 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:54,402 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:54,419 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:54,419 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:54 GMT[\r][\n]"
+2024-12-17 23:37:54,419 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:54,419 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:54,419 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:54,419 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D"}]}[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 998[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:54,420 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Etag: W/"8df-BI33H3JkF5x/twg0KTe/qy2U04I"[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Age: 1267[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:54,421 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38dafc08fb8ef1-BOM[\r][\n]"
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=7020&min_rtt=7020&rtt_var=3510&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:54 GMT
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D"}]}
+2024-12-17 23:37:54,422 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 998
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:54,423 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << Etag: W/"8df-BI33H3JkF5x/twg0KTe/qy2U04I"
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << Age: 1267
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38dafc08fb8ef1-BOM
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=7020&min_rtt=7020&rtt_var=3510&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:54,424 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:54,425 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:54,425 [main] DEBUG org.apache.http.wire -  << "21c[\r][\n]"
+2024-12-17 23:37:54,425 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xa5][0x95]Kn[0xdb]@[0x10]D[0xf7]>ECk/,'v>7[0xf0][0x19][0x82],[0x9a]d[0xcb]n`~[0x9e][0x8f][0x10] [0xc8][0xdd]SC[0xca]2A2[0xe][0x81]Y[0x10][0xd0]PR[0xbf][0xe9][0xea][0xa9][0x9a][0x1f]7D[0xbf][0xf1][0x10][0x1d]J[0x92][0xf8]4[0x1c][0xbe][0xd3][0xf1]vz[0xa1][0xf3]E[0xd6]l[0x4][0xeb][0xc3] F[0xfa]\[0x12]q[0xc9][0xf5][0x11]{[0xb8][0xfc][0xa4][0xf7]6[0x18][0xc9]R[0xff]vb[0x93][0x4][0xaf][0xff][0xdc][0xfe][0xf]p[0xbf][0x4][0xbc][0x16]M[0x84][0xda][0x8e]-[0xca][0xf4]j[0xb0][0x94]L[0xfe]t[0xd2]^[0x99][0xf0]u[0x1b][0xf0][0xd3][0x12]x*[0xcf][0xca][0x99][0xce][0xe2][0x14]H[0xab][0xae][0xa4]6[0xc2][0xe7]%[0x1][0xdb][0xf]>FOP[0xb][0x1f]x[0xab]|[0x8e]e_[0xf5][0x87]eu[0xc3][0x9d][0x8f][0xea]S[0xdd][0xbc]7F3T[0x2][0x11][0xed]X[0xa8][0xc5]I[0x89][0x7][\r][0x9a]z[0xad][0xe2]1[0x85][0xe8][0xcf]:[0x88][0xcb][0xa4][0xc6][0x94][0xc6][0xf1]=n[0x8c][0x8f][0x8a]1[0xd8]L[0xe4][0xac][0xde]I[0x85]v%[\r]xs[0xf6][0xa6][0x84][0xcc]Pa[0xda][0x89][0xb7]N[0x1b][0xb5][0xfe][0xb2][0xe4][0xa3]'O[0xf2]+[0xc8][0xa0][0x99][0xa9][0xf7].[0x9]D[0xc8]%NHum[0xbc][0xaf][0xeb]~[0xfd][0xbb][0xbe]o[0x9a][0xdb]z[0x80][0xb9]k[0x9a][0xf3][0xb7]%[0x9][0xc3][0x95][0x84][0xe1][\n]"
+2024-12-17 23:37:54,425 [main] DEBUG org.apache.http.wire -  << "[0x5][0x89])T7dxCC[0xda]<P[0xfb]{:[0xde]m[0x8b][0x98][0xf2]u[0x86][0x83]7>[0x8a]}-2[0xc9]hY[0xb1][0x1e]C[0xa0][0xa9][0xc9][0xe3]*_[0xce][0x2][0x9f]D[0x89][0xc5]^[0xdc]R[0xf][0xcf][0xc4]o#[0xad][0x82][0xa6][\n]"
+2024-12-17 23:37:54,425 [main] DEBUG org.apache.http.wire -  << "[0x7]R[0x10]c[0xc4][\r][0x80][0xd4] @[0xee]h[0xda]L[0x98][0xfd][0xa4]U[0xc2][0xc0][0x8d]3[0x1]][0xb5]G[0xe3][0xc4]V[0x11]3[0xef]#[0x15][0xf7][0x6][0xc4][0x84]b[0xff][0xa2][0x19][0x91][0xed][0xaf][0xf6][0xdb][0xf6][0xfc][0xfe][0xfe]V[0x9][0xc4][0xdd][0xac]6[0xb1]E[0xbf][0x97][0xf5][0xa6][0xbb][0xf7][0x93]V[0xe9][0xc2]}_[0x10]thR|[0xba]^[0xf]I[0xd1][0xb0][0x8c][0xd7][0xd1],c[0xda][0xd0][0xab]`[0xa9]F[0x9f]Em[0xbd][0x7][0x1d][0xb2]v[0x84][0xfe][0xe3]R[0xda]O[[0xc5][0xca]8>[0x88]YM8[0xf]1[0xe1][0xf7][0x90]WG}1[0xa1][0xf5],}[0x10]4[0xa3]E[0xe6][0xaa][0x8e]f[0xc][0x1c]u[0xdc][0xcc][0xb8]I[0x18][0xe6]EMS[0xfb][0xf7][0xab][0x0][0x9a]n[0x10][0xe7];L[0xd7]hW3!qP\Z[0x82][0xb4]%[0x1f][0x10]K[0xe3][0xd8]?[0xe2][0xde][0xfc][0xfc][0xb][0xf7][0xbf][0x99][0xc7][0xdf][0x8][0x0][0x0]"
+2024-12-17 23:37:54,426 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,426 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:54,426 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,426 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:54,428 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@37b57b54
+2024-12-17 23:37:54,428 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:54,438 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:54,438 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:54,461 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:54,461 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:54,461 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:54,461 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:54,461 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:54,461 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=5 HTTP/1.1
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=5 HTTP/1.1[\r][\n]"
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=5 HTTP/1.1
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:54,462 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:54,463 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:54,463 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:54,484 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:54,484 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:54 GMT[\r][\n]"
+2024-12-17 23:37:54,484 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:54,484 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:54,484 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:54,484 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 997[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:54,485 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "Etag: W/"932-JiHKfrNyHWI5zxhO4x1+znFqBcQ"[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "Age: 1266[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38dafc6d32859b-BOM[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=7088&min_rtt=7088&rtt_var=3544&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:54,486 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:54 GMT
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 997
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:54,487 [main] DEBUG org.apache.http.headers - << Etag: W/"932-JiHKfrNyHWI5zxhO4x1+znFqBcQ"
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << Age: 1266
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38dafc6d32859b-BOM
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:54,488 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=7088&min_rtt=7088&rtt_var=3544&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:54,489 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:54,489 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:54,489 [main] DEBUG org.apache.http.wire -  << "22f[\r][\n]"
+2024-12-17 23:37:54,489 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad]U[0xcb][0x8e][0x13]1[0x10][0xbc][0xef]W[0xb4]r[0xde][0xc3].[0xb0][0xb0][0xe1][0xf][0xf8][0x6][0xc4][0xc1][0xb1]{[0xa1]%?[0x6][0xbb][0x1d]!![0xfe][0x9d][0xf2][0xcc]l[0x92][0x1d]G"[0x92][0x91][0x92][0x83][0xad][0xc4][0xd5]U]][0xfd][0xf5][0x8e][0xe8]7[0xbe]D[0xbb]Z8q[0xbb][0xcf][0xf4]t[0xbf]\H;<?[0xae]'[0x15][0xf5][0x8c][0x8b]][0xa9][0xc5][0xca]$J?[0xab][0x90]&5a[0xb7][0xfe][0xc4][0xa6]0yVn[0xff][0xd3]\[0x19][0xb7][0xee][0xff][0x9][0xf0]n[0xb]pL[0xbe]Nj[0x94][0xb]q[\r][0xb4][0x1e]qPrb[0xd5]\[0x83]{1[0xbe][0xdc][0x88][0xf7]~[0x8b][0x7][0x1e][0x8e][0x3][0x19][0xa5][0xcc][0x19][0x80]8[0x3][0xec][0x17][0x99][0xaa]Tf[0x9e][0xa3][0x14]?[0xf4][0x1a]F[0xa5]#g[0x1]M[0x80][0x1][0xe8]Dz[0x90][0xdd][0xd3][0x16][0x8a][0xe7]F[0x19]2[0x8e][0xa4]([0xd3]U[0xf9]n[0xa7][0xf2]q[0xfb][0xbe]D+[0xae][0xd1]ij[0x19][0x9e][0xb8][0xe9][0xc6][0x83][0x82]}[0xda][0xa2]xS[0x9d][0x89]*s{[0xc][0x13]{[0xf9][0xce][0xd1][0x9][0xd9][0x14][0xb][0xe3]Jk^x[0xf2],l[0xfa][0x1f]U<w[0xce]D[0xbf]f~[0xb0][0x87][0xe5][0x9][0x98]B[0xde][0x1c]R[0x96]TL[0x80]Y [0x83][0xf1][0xd2][0xc][0xd3][0xea][0xc0][0xc7]X[[0xcb]R[0xf8]`c[0xf7][0x9d][0x87][0xb8][\r] jI!6[0xc3][0xea][0x10][0xd9][0xfd][0xc3][0xf6][0xfd][0x90]<[0x17][0x15][0x10][0xc6][0xf3]r[0xc9][0x84][0x94]#7[0xc1]][0xf2])s[0x18][0xc6][0xee]2&V[0xef][0xcd]2[0x88][0x97][\r]^[0xfc][0xd5]h[0x8b]C[0xb]&vr=[0xe]n[0x87][0xee][0xd2]G[0xe2]*[0xe8][0xb9][0xb1]c[0x8]][0xde]$'[0x89][0xa4]f~[0xc3][0xed],7[0xf8][0x1d]jq[0xf0]Pd[0xcb][0xa5][0xcc]![0x81][0x9b][0xc5][0xdf][0xcd]dc[0x5]ui[0xf4]b[0xac]x0[0xe][0xa8]l[0xd5][0x18][0xd5]xA5c[0xa6][0xdd]witd[0xf];[0xfd][0x10][0xdf][0x86][0xe3]LYjQ[0x8c]l)5`[0xaa][\r][0x88][0x87][0x4][0xba][0x9][0xf6][0x1e][0xe3][0xda][0xc5]UL[0x7]0=[0xed]0W[0xad][0x4]H[0xcb]Q[0xb0][0x1][0xca][0x84]H[0x86][0xa3][0xcb]i[0xe9][0xc][0xf2][0xef]rl[0x9e][0x18]L[0xd0]Ejp*[0x8b][0xa5][0x9b]#[0xd6][0xf4][0x18][0x84][0xed][0x82][0xcb][0xf1]A[0xda][0xa2][0xb9][0x1c][0xe2][0xaa][0xb3][0xc2][0xaf][0xcd]_[0xba]2[0x8f]\1[0x93]p[0xc4][0xae]x[0xeb][0xbf][0xb1]Nt[0xf9][0x15][0xe1]|[0xa6][0x8b]e[0x9f][0x1][0x93][0xe2][0xe0][0x2]||[0xe8][0x82][0xec][0x9c][0xd5][0xf3]vXp[0x9b][0xe2][0xaf][0x9]B[0xcd][0x95][0xb7]-[0xe0][0xbb]o[0x1][0xe7]o[0x89][0xbc]2[0x9][0x0][0x0]"
+2024-12-17 23:37:54,489 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,489 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:54,489 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:54,489 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:54,491 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6794ac0b
+2024-12-17 23:37:54,491 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:54,498 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:54,498 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:55,615 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:55,615 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:55,615 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:55,615 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:55,615 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:55,615 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=10 HTTP/1.1
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=10 HTTP/1.1[\r][\n]"
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=10 HTTP/1.1
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:55,616 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:55,637 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:55,637 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:55 GMT[\r][\n]"
+2024-12-17 23:37:55,637 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:55,637 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 996[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:37:55,638 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:55,639 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:55,639 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:55,639 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:55,639 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:55,639 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:55,639 [main] DEBUG org.apache.http.wire -  << "Etag: W/"94b-Xf3KAbsgAZYN4iY133g5Nn+yLLE"[\r][\n]"
+2024-12-17 23:37:55,639 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "Age: 1267[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38db03ac84f42d-BOM[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=0&min_rtt=4294967295&rtt_var=750000&sent=1&recv=3&lost=0&retrans=1&sent_bytes=0&recv_bytes=189&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:55 GMT
+2024-12-17 23:37:55,640 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 996
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Etag: W/"94b-Xf3KAbsgAZYN4iY133g5Nn+yLLE"
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Age: 1267
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38db03ac84f42d-BOM
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:55,641 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=0&min_rtt=4294967295&rtt_var=750000&sent=1&recv=3&lost=0&retrans=1&sent_bytes=0&recv_bytes=189&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:55,642 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:55,642 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:55,642 [main] DEBUG org.apache.http.wire -  << "238[\r][\n]"
+2024-12-17 23:37:55,642 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad][0x96]In[0x1b]A[0xc]E[0xf7]>[0x5][0xa1][0xb5][0x17][0xb2]3Y[0xb9]A[0xce][0x10]d[0xc1][0xee][0xa6][0x4][0x2]5[0xa9][0x6]A@[0x90][0xbb][0xe7]WkL[0x97][0x13][0xd8][0xa8][0x0][0x12][0xa0]nH[0xfd][0xeb][0x92][0x8f][0xfa][0xfe]@[0xf4][0x13]o[0xa2]UI[0x12][0xbf]M[0xab][0xaf][0xf4][0xb4]~<[0xdd][0xd1][0xf9][0xea][0xe5][0xe9]|[0x99]5[0x1b][0xc1][0x9d]U[0xc9]4[0x96][0xa0][0x93]f[0xce]BI[0xf6]E[0x89][0x8d][0xee][0xb][[0xda][0x96][0x1d][0x93]e[0xf5]Q[0xd2][0xea][0xfc][0xc3][0xd1][0xdb]`$K}[0xdc][0x96]M[0x12][0xdc][0xfe][0xf5][0xf8][0x6][0xe5][0xe7][0xa5][0xb2][0xba][0x83][0xb8][0x8c]gSb[0x9][0x82]c[0xd8]}[0x11][0x92]L[0x8c]C[0xa9]1[0xc5][0x92]8[0xb5][0xaf])[0xe7]X[0xde],[0xfc]a)[0xec][0xad][0xd3]D[0xae][0x18][0xc3]$[0x10][0xb9][0xd8][0x9d]4eucV[0xdf]+[0xf9]q)i[0xbd][0x11]<[0x9c][0x13]Y?)[0x5][0x89][[0x89][0xe2][0xa0]X?[0xa7][0xa0][0xa3]r[0xd6][0xfe][0x90]?-[0x85][0xf][0xde][0x94]PK[0x9b]`o[0x7][0xdf]I[0xad]O[0xa8][0xf3]D[0x93]7>[0xea]P[0x12]1RVB[0x6][0x12]yN[0xbf][0xfb][0x1c][0x9f][0x97][0xe7][0x90]c0:[0xf2][0xe0][0x9][0xfe]=![0xc][0x14][0xba][[0xe6][0xcb]Rf[0xf4][0xae][0xb6]pq[0xb9][0xc4][0xb3][0xad][0xe0][0xab][0xe7][0xd2][0x9f][0xed]K[0x93][0xad][0x18]r[0xde][0xd1] [0x9c]Y[0xaa][0xa7][0xde][0xbe][0xd9]4~[0x8a][0x9]hRE[0x91]0[0x17][0xd7]b[0xda][0xbf][0x84][0xf7][0xe][0xad][0xcd]z[0xa9][0xc5][0xe3]X[0x12]#)J[0xea]0[0x80]%e[0xbf]T=J[0x1c]+)[0xd4];[0xe9][0x1d][0xcc]M[0xc3]"H[0x84]KK[0xe6][0xca][0x82][0xdb]D[0xd2]ih[0xe7]$[0xd4][0x6][0x1][0xaf][0xe8][0xf4]u[0xa1][0xdb]p[0x5][0x8e][0x98][0xa3][0x12]{O[0xd6][0xb0][\n]"
+2024-12-17 23:37:55,643 [main] DEBUG org.apache.http.wire -  << "@[0xc2]x[0xa4]k3-[0x92]8%v[0x9b][0xb5][0xde]^[0xdb]4[0xcc][0x8a][0x12]A[0xaa]I[0x6][0x5]&[0xee]KRy-[0x0][0xa9][0xca]%[0x10][0xbe][0x8f][0x8d]{[0xa3]hPV[0xd1][0x81]8[0xe][0x12]=l[0xe7]k[0xfa][0xd2]m[0xba][0x81][0xd7][0xc9][0xb4][0x1c][0xa9][0xfa][0x3][0xa0]!e[0xe0][0x9f][0xaf][0xfe][0xe7]V[0xf9]_Eo[0x98][0xf5]'L[0xe0][0x19]/[0xac]DxF[0xf]h][0x1a][0xaf]z~[0x8f]f[0x3][0xb0]{H[0xef][0x8b][0x7]_[0x86][0xda][0xf6]\[0x83][0x98][0xd7]d[0xaf]bC14[0xd0]y[0xae]*[0x94][0xe7]F[0xbe][0xc2][0xba]W[0xac][0xe1][0x99][0xab];[0x1e][0x95][0x8c]pb[0xc][0x16]`[0x1d]u[0xfc][0xc5][0xd8]9[0xee][0xc4][0xc9][0xf3][0xba][0x1][0x9a][0x6][0xe0][0x8c][0x18][0xb][0xb6]6[0xcf][0xdd]&[0x84][0xe5]6[0xeb][0xc3][0x8f][0xdf][0x16][0x9f][0x1a]nK[0x9][0x0][0x0]"
+2024-12-17 23:37:55,643 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:55,643 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:55,643 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:55,643 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:55,644 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@17b6d426
+2024-12-17 23:37:55,645 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,498 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,514 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,592 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:56,593 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:56,594 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:56,594 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:56,595 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:56,595 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /users HTTP/1.1
+2024-12-17 23:37:56,595 [main] DEBUG org.apache.http.wire -  >> "GET /users HTTP/1.1[\r][\n]"
+2024-12-17 23:37:56,596 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:56,596 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:56,597 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:56,597 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:56,597 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:56,597 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:56,597 [main] DEBUG org.apache.http.headers - >> GET /users HTTP/1.1
+2024-12-17 23:37:56,597 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:56,598 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:56,598 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:56,598 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:56,598 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:56,660 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:56,661 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:56 GMT[\r][\n]"
+2024-12-17 23:37:56,662 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:56,662 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:56,662 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:56,662 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D"}]}[\r][\n]"
+2024-12-17 23:37:56,662 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D[\r][\n]"
+2024-12-17 23:37:56,662 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:56,662 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 999[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734419864[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:56,663 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:56,664 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:56,664 [main] DEBUG org.apache.http.wire -  << "Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"[\r][\n]"
+2024-12-17 23:37:56,664 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:56,664 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:56,664 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:56,665 [main] DEBUG org.apache.http.wire -  << "Age: 1269[\r][\n]"
+2024-12-17 23:37:56,665 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:56,665 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38db09fc804037-BOM[\r][\n]"
+2024-12-17 23:37:56,665 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:56,665 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=13967&min_rtt=13967&rtt_var=6983&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=179&delivery_rate=0&cwnd=248&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:56,665 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,666 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:56,666 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:56,666 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:56 GMT
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D"}]}
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734419823&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=wz1rq0%2BQenDa%2FANVDdyMDaVM42lD7KzCmCsXI5%2BHQcw%3D
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 999
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734419864
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:56,667 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Etag: W/"160d-1eMSsxeJRfnVLRBmYJSbCiJZ1qQ"
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Age: 1269
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38db09fc804037-BOM
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:56,668 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=13967&min_rtt=13967&rtt_var=6983&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=179&delivery_rate=0&cwnd=248&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:56,673 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,679 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:56,680 [main] DEBUG org.apache.http.wire -  << "737[\r][\n]"
+2024-12-17 23:37:56,680 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0x95][0x98][o[0xe3]8[0x12][0x85][0xdf][0xe7]W[0x10]y[0xda][0x1]F[0x82].[0xd4]m[0x9f][0xdc][0x9d]d[0xba][0xb7][0x93][0xf4][0x6]q[0xef]4[0x6][0x83]A@K[0x15][0x89]m[0x8a][0xf4][0x92][0x94][0x1d]e1[0xff]}[0x8b]v.[0x8e]-[0xdb][0x9a][0x7][0xc3][0x92][0xa8]k[0xf1][0xd3]9[0xa7][0xf4][0xc7]O[0x84][0xfc][0xf][0x84][0x9c][0xf1][0xea][0xec][0x9f]$[0xfc]e[0xb3]"Y[0xb][0xb8]zv[\r]LJ [0x9f]4kX{[0xf6]<[0xd8][0x19][0xd0]/;|[0xd4]`_[0xb6]C[0xcb][0xb8]p[0x1b][0xa7]\[0x96][0xa0]a[0xc2][0x16][0x9a][0xb][0xc6][0x9f]^[0xf6]`U[0xa5][0xc1][0x18][0xdc]gsQ[0xdc]d[0xac][0x6]<[0x5][0x1e]u[0xd5][0x9]f[0xc8]5[0xaf][0x9b][0x97]3[0xba][0xe1][0x8e][0xdb][0xf5][0x85]>,[0xac]O[0x92]$}[0x1b]*[0xb9][0xed][0xdd][0xc8][0xa7][0x15][0xc8][0x99][0xd2][0xaa][0xab][0x9b][0xb7][0xc1]'[0xbe](U[0xb5]>[0xb2][0x88][0x8a]"[0xf7][0xe2]<[0xa3]o[0xc3]5[0xa8][0xad][0x9b][0xc0][\r][0x82][0xad][0xef][0xc1][0x8b]3?[0xe][0x93][0xe2]uO7$k7[0x94][0x87]~H[0x8b][0xf4][0xec]y[0xe0][0xaf][0xf5][0xff]_[0xcf][0xf][0xb6]h[0x94]\_,[0xf4][0xb2],[0xf0][0xb2]8[0xf5][0xf2] [0xe][0xc9]c[0x92]R[0x1a][0xbd]<[0xfe][\n]"
+2024-12-17 23:37:56,680 [main] DEBUG org.apache.http.wire -  << "f[0xe6][0xf9]q[0x1a].*[0xa8][0x99][0xae]|[0xa5][0xeb][0x97][0xf1]R[0xb5][0xb]&[0xfb][0xed][0xf2][0xbc][0xd4][0xf9]N[0xb5][0xac][0xee]@3[0xef]\+[0xc9][0xb6][0xaa][0xc0]l[0xd9][0xdc]6[0x9a][0x99][0xf5]~7[0x9d][0xb0][0xdc][0x13][0xac][0xc7][0xfa]W[0xa4][0x14][0x1c][0xa4][0xf5]p[0xbe][0x96][0xa0][0x89][0x84]N3[0xe1]I[0xd8][0xaa][0xef][0xcc][0xac][0xef][0x86]i[0x89][0xf3]B4[0xe0][0xb8][0xe5]-[0x10][0xf0]Z[0xa6][0xe7]`[0xcd][0xe6]y[0xdd][0xd3][0xae][0x9f]u[0x1b][0x96]h[0x7][0x96]K[0xbd][0xe4][0x92]|V+[0x10]b[0x88][0x95][0xf][0xd2]b[0x95],[0x16]`[0xf][0x98][0x6]1c[0x93][0x16][0x4]7[0x86][0xf9]v9[\n]"
+2024-12-17 23:37:56,681 [main] DEBUG org.apache.http.wire -  << "[0x98][0xdf]xi[0x95]&[0xb7][0x82]qi[0x6][0x90][0x99][0xba][0x5][0x92]g[0xc5]>3[0xdf][0xb9]Q[0xf3]~[0xd6][0xe9]C[0xcc][0x4]I[0x9a][0xe2]Tf[0xe1][0x8]fh[0xec][0x17]I0[0xc4][0x8c][0x17]S[0x9f][0xa6]a~[0x2][0x9a] [0xc][0xbc][0xb4][0x88][0xbc]4)b[0xf2][0x18][0x14]a[0x94][0xc] [0xc3]$3[0x96][0x19][0xce][0xfc][0xb7][0x19]<[0x86][0xcc][0x5][0x94]s[0xb5]B^[0xb8][0xb1][0x7]y[0xb9][0xd5][0x8a][0x95][0x96]/[0x81]T[0xbc]rK%)[0x95][0xb4]\[0xd6] [0xcb]~[0x97][0x13][0xd3]K[0xd0]5[0x2]bJ&[0xd8]L[0xe0]B[0xb7]X[0x88][0xde]+[0x9b][0xf5]$[0x1c][0x86]%[0xde][0x81][0xe5]\@[0xb][0xee]B@>[0xb2][0xae]l[0x86][0x80][0x99][0xb2][0x96]I[0xdb][0xb0]=^[0xbe]2[0xdc]*'=[0x18][0x90][0xef][0xeb]q[0x14][0x98][0xb][0xd4][0x8][0xa7]1[0x97][0x8f][0x16][0xa4][0xe1]J[0x1e][0x86][0x86]f[0xfb][0xd0][0xdc][0x94]W [0x9f]84l[0x9]r[0x10][0x9b][0xa4]H[0x8a][0xc0][0xa3]a[0x92][0x8d][0xc0]&[0xcd][0xfd]4[0xc][0xa2]!lh[0xe6][0x7]i[0x12][0x9f][0xd4][0x1a][0x9a][0xc6]^[0x18][0xc5][0x1e][0xa5][0xaf][0xf7][0xbb]M[0x8c]f-[0xd7][0xca][0xe7][0xf2]A[0xfd]-[0x89][0xf9][0xc2]J53[0xdb][0xe5][0xd9][0xa1][0xe6]WV[0x2][0xb1][0x8a]<[0xb8][0xff][0x19][0xe8]4[0xee][0x80]z[0xc3][0xa5][0x5][0xed]6[0xee][0x82][0x3][0x1e][0xc8][\r].V[0xe3][0x9e]5b[0xc6][0x90][0x1b][0x8e][0x87][0xe1]4[0x1c][0xe3][0x86][0xee]ps[0xcb][0xac][0xe6]%g[0xe4][0x1a][0x9f][0x93][0x95][0xf3]!n[0xae][0x98][0xe6][0xce][0xb7][0xf6][0xb8][0xf9][0xd2][0x89][0xf5][0x80][0xff][0xef]s[0x85]z2W[0xba][0xdf]V[0xe0][0xa3][0xf8]|VP[0xa3][0x8c][0xde][0xb0]Wy[0xdb]3(|[0x8b][0xf7][0xb9][0x99][0xaa][0xce]6[0xe4]R,[0xb9][0x19][0xa6]&.[0xc2][0xc2][0xa3][0xd1][0x18]j[0xa2][0xc2][0xa7]I6[0x8]M[0x98]R[0x1f][0xad].8A[\r]-[0x90][0x19][0xf4][0xa8]"[0x8d]Pl[0xc2]WG[0xdd][0x6]g[0xce][0x4]l[0xfb][0xf6]Qjf [0xbc]s[0x85]f[0xa1][0xfb][0x83][0xc0]ll[0xc9][0xf2][0xb5]+=[0x81]VH[0x8f]@[0xd4]0'[0x90][0x85]VU[0xe7]4[0xc8][0x95]k[0x87][0x1b][0xa4][0x5]_T[0xc7][0x8]);[0xeb]d[0xc9][0x83][0xaa][0x6][0x82][0xf7]J[0x9c][0xab][0xf1][0x12][0x8e][0xc1][0x93][0xec][0x8a]N[0x3][0xc2]@O.88[0x8a][0x6]E[0xe7][0x8a][0xb5][0xfa][0xf5][0xf5]~C[0xe7][0xba]+[0xb9][0xba][0xff][0xc][0xeb][0x9b]@r[0x10]#[0xe]~[0xc9]F[0x91]3[0x9d]s[0x1][0x86]|gb~[0xd8][0xa8][0xe2]$[0xdc]g[0xe7]N[0x99]R[0xc1][0x92][0xc3]j[0x10][0x9d]8[0x8e][0xd2]xL[0xac][0x9][0xfd]<[0x8c][0x86],*[0x8d][0xfc]$[0xc6][0x88]r[0x1c][0x9a]D[0x9][0xfd][0xb9]H([0xaa]M^[0xc][0x0]Sa[0x9d]t9Zj[0xae][0x0]P[0xc]4[0xb9][0xbe]>?[0x88][0xcc]pN[0xbc][0x12]-[0x2]'[\n]"
+2024-12-17 23:37:56,681 [main] DEBUG org.apache.http.wire -  << "[0x85][0x6][0x1][0xf2][0x9e][0x99][0xb1][0xc4]([0xd1][0xd9]w[0xfa][0xbd][0xc1]E[0xc3][0xf2]y[0xc4]y[0x14][0xc8][\n]"
+2024-12-17 23:37:56,681 [main] DEBUG org.apache.http.wire -  << "[0xf]A[0xe5][0xa9][0x88][0xe9][0x8d][0x85][0xf6][0x18]*[0xe9][0xe]*7[0xda][0xf8][0xe4][0x2]p[0x96][\r][0x99][0x96][\r][\n]"
+2024-12-17 23:37:56,682 [main] DEBUG org.apache.http.wire -  << "[0xc7][0xab][0x8b][0xbe][0xc3][0xe5][0x1a][0xd4]B[0x89]J[0xdd][0xbf][0x5][0xde][0xc0]A1[0x12][0xd0][0xdf]_[0xb0][0xb2][0x99][0xfc]`f[0x1][0xfa]][0x95][0x8e]r[0xf3]U[0xe9][0x19]h[0x14]Z[0xc]}[0xc6] x[0x87]t[0x7][0xf3][0xc7]![0xdd]9o\[0x0][0xe8][0x7][0xf1][0x89][0xe2]$H[0xbc]0[0x8e][0xc7][0xf8]U[0x16][0xfa]4,[0xb2][0x1][0x86]p$[0xa3][0xd9][0xa9][0x94][0x83]v[0x95]e^[0x11]'[0x1e][0xba]kN[0x1e]S[0x1a][0x7][0x3]()[0xc1]Ffb[0xd4]p[0xc3]+L[0x10][0xde][0xb5]*[0xe7][0x18][0x15][0xe][0xb2]4[0xed]e[0xd9]`n[0xe6][0x6][0xe5]g[0xa6][0xac]U[0xad]'\[0xf4]8mX\J[0xb5]d[0xeb][0x84]4[0xd2][0xb1][0xb2][0x1d][0x92][0xae]:m[0x11][0xa2][0xef][0x80][0xd9]V[0xb2]A[0x88].[0xc5][0xaa][0x97][0xfe]F%[0xf6][0x0][0xfa][0x86]q[0xba][0xf7]7[0xe6]3[0x99]q[0xb7]2[0xb6][0xa5][0xba][0x83]G[0xf2]M[0xbb][0xf3][0x1c][0x12][0x9d]([0x1f][0x0][0xc7]E[0xf8][0xd6][0xc1]3lWy[0x1e][0xa0][0x10][0x4]Eq[0x1a][0x9a][0x88][0xfa]y[0x81][0xf9]w[0x9f][0x99][0x8][0x15][0xa9][0xc8][0xe9][0x9]f[0xa2]0[0xc0]$[0x94]aP[0x8a][0x87][0xba](p[0x9e][0xea][0xf3]1[0x92][0xf3]E5[0xd2]`#[0xab][0xba][0xc5]AL[0x10][0xa8][0x7]^c[0x93][0xe4]&[0xbe]u[0x96][0xd5]B[0x85]Q[0x3]S[0xf7][0xdc]{Pz[0x1f][0x13]L[0xc9][0xe0][0x2][\r]j[\r][0x82][0x84][0xed][0xae]q[0xad][0x93][0xc5][0x8a][0x83]>[0xc6]H[0xbe][0xc3][0xc8]W4#[0xe5][0xa2][0xe9]]'[0x95]x0[0x15]2[0xca]5[0xf9]m[0x8][0x96][0x1b][0xf6][0x88][0xf7]u[0xff][0x15][;[0xb5][0xda][0xa3]e[0xda][0x80]^)UMP1X[0xab]d[0xe5][0xb7]0[0x8a][0x95]K![0xcc]JiT[0x8c]i[0xd7][0xb6]|[0xa8][0x7][0xdf] [0x93]E[0x3][\r][0xd5][0x7][0xc1]{v[0xd0][0xa6]h[0x12][0xa6]#h[0xf1]B[0xea][0xc7].[0xc1][0xc][0xa5][0x9b]([0xf0][0xb3]4[0xcb]N[0x0][0x93][0xe4][0xa9][0x8f][0x9][0xc7]O[0xb][0xea][0xd2][\r][0x1d]R[0x98][0x1f][0xac][0xec][0xb1][0xad]@[0xf7]V[0xed][0x8]r>[0xcc]\[0xed]m[0xd3][0x9f][0xa0][0xe7]_[0xed]b[0xd3][0xd3][0xa0][0xc6][0x18][0xc0].[0xaa]b[0xba]w[0xdd]T[0x9][0x8b][0xbd][0x8e][0xfb]U_`[0xd3][0x8b][0xac][0x17]G[0x80]S[0xec][0x80][0xf3]I[0xa0]E1r[0x7][0x8][0x10]:[0xc5][0x10]/[0x17] [0x16][\r][0x1f]H[0xc3][0xe7][0xd8][0xb3][0xb5][0xf7]7[0xe5][0x5][0xe8][0x16]y[0x9b]T[0xd8]an[0xbd]L[0xc7][)[0xd6][0xe3]eo[0x99][0x9e][0x1f][0xe4][0x84][0xd2][0x1]N>2$L[0x9][0xd5][0x2]6[0xdf][0xc3][0xa6][0x94][0xa5][0xb4]H0[0xb1][0x4][0xe3][0xf4]%[0xa5][[0x9][0xe8]][0x1c][0xce][0xfd]<[0xc7][0xb4]r"[0xd9]dY[0xf2]s[0x91][0xa5]^[0x9a][0x15][0x94]<R[0xe4]l([0x11][0xe3]4jV[0x8d]$[0xe6]we,a[0x18];[0xa6]j[0xfb][0xc3][0xc4][0xae])[0xad]8[0xae][0xaf]!p-7[0x82][0xd0]ag[0xd1]{3[0xe6]\[\n]"
+2024-12-17 23:37:56,682 [main] DEBUG org.apache.http.wire -  << "S[0xf1][0xf]([0xf7][0xb8]au[0xad][0xa1]v[0x8a][0xf3][0xf6][0xad][0xc6]B[0xd9][0xa0]j[0xa8][0x9a][0x1f][\r][0xc3]ap[0xa8][0x5]g[0xe4][0xa2][0xfb][0xd8][0xfd][0xb7][0x83]A[0xb9]Q[0xd8]L5[0xfe][0xd4]2[0xf7][0xf9]f[0xf][0xa2];[0xe8][0xfd][V[0xe1];RO[0xe6][0xd8]w!B[0xa3]?[0xf8]1[0x14]9 [0xdf]:-[0x17]|[0xe][0x7]A[\n]"
+2024-12-17 23:37:56,682 [main] DEBUG org.apache.http.wire -  << "[0x8b]|[0x1f][0xa4][0xe7][0xf6][0xef] EqH[0xa3][0xdc][0x8b][0xa2]t[0xcc][0x17][0x9c]8[0xf7][0xa3]8O[0x7]0J2?[0x8a][0xe2]S[0xf1]8[0x88][0xa8][0x97]R[0xf7][0x91]1[0xa0][0x3][0xf0][0xb0]v[0x86]j[0xc]#[0xbf][0xdb]<[0xb7][0x99][0xc7][0xb2][0xf1][0xb9][0x8b][0xc5]L`[0xc8][0xad][0x8][0xb4][0xb][0xb4]k,|}[0xc4][0xa7],[0xd3]5[0xd8][0xed]D[0xdc]b[0x9d][0xc4]6.?[0xfd][0xf9][0xb5]s%[0xe7][\r][0x16][0x0][0x0]"
+2024-12-17 23:37:56,682 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,682 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:56,682 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,683 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:56,744 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@4d654825
+2024-12-17 23:37:56,744 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,779 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,779 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=1 HTTP/1.1
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=1 HTTP/1.1[\r][\n]"
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:56,799 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:56,800 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:56,800 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:56,800 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:56,800 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:56,800 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=1 HTTP/1.1
+2024-12-17 23:37:56,800 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:56,800 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:56,801 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:56,801 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:56,801 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:56,820 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:56 GMT[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D"}]}[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:56,821 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 998[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Etag: W/"8df-BI33H3JkF5x/twg0KTe/qy2U04I"[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:56,822 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.wire -  << "Age: 1269[\r][\n]"
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38db0b0ad8f429-BOM[\r][\n]"
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=9967&min_rtt=9967&rtt_var=4983&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=244&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:56 GMT
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:56,823 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D"}]}
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457607&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=FxISUN6DqIXPu51oDHRjf6dTuQFMUZyjJMQxHUGY1bA%3D
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 998
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Etag: W/"8df-BI33H3JkF5x/twg0KTe/qy2U04I"
+2024-12-17 23:37:56,824 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.headers - << Age: 1269
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38db0b0ad8f429-BOM
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=9967&min_rtt=9967&rtt_var=4983&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=244&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:56,825 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,826 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:56,826 [main] DEBUG org.apache.http.wire -  << "21c[\r][\n]"
+2024-12-17 23:37:56,826 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xa5][0x95]Kn[0xdb]@[0x10]D[0xf7]>ECk/,'v>7[0xf0][0x19][0x82],[0x9a]d[0xcb]n`~[0x9e][0x8f][0x10] [0xc8][0xdd]SC[0xca]2A2[0xe][0x81]Y[0x10][0xd0]PR[0xbf][0xe9][0xea][0xa9][0x9a][0x1f]7D[0xbf][0xf1][0x10][0x1d]J[0x92][0xf8]4[0x1c][0xbe][0xd3][0xf1]vz[0xa1][0xf3]E[0xd6]l[0x4][0xeb][0xc3] F[0xfa]\[0x12]q[0xc9][0xf5][0x11]{[0xb8][0xfc][0xa4][0xf7]6[0x18][0xc9]R[0xff]vb[0x93][0x4][0xaf][0xff][0xdc][0xfe][0xf]p[0xbf][0x4][0xbc][0x16]M[0x84][0xda][0x8e]-[0xca][0xf4]j[0xb0][0x94]L[0xfe]t[0xd2]^[0x99][0xf0]u[0x1b][0xf0][0xd3][0x12]x*[0xcf][0xca][0x99][0xce][0xe2][0x14]H[0xab][0xae][0xa4]6[0xc2][0xe7]%[0x1][0xdb][0xf]>FOP[0xb][0x1f]x[0xab]|[0x8e]e_[0xf5][0x87]eu[0xc3][0x9d][0x8f][0xea]S[0xdd][0xbc]7F3T[0x2][0x11][0xed]X[0xa8][0xc5]I[0x89][0x7][\r][0x9a]z[0xad][0xe2]1[0x85][0xe8][0xcf]:[0x88][0xcb][0xa4][0xc6][0x94][0xc6][0xf1]=n[0x8c][0x8f][0x8a]1[0xd8]L[0xe4][0xac][0xde]I[0x85]v%[\r]xs[0xf6][0xa6][0x84][0xcc]Pa[0xda][0x89][0xb7]N[0x1b][0xb5][0xfe][0xb2][0xe4][0xa3]'O[0xf2]+[0xc8][0xa0][0x99][0xa9][0xf7].[0x9]D[0xc8]%NHum[0xbc][0xaf][0xeb]~[0xfd][0xbb][0xbe]o[0x9a][0xdb]z[0x80][0xb9]k[0x9a][0xf3][0xb7]%[0x9][0xc3][0x95][0x84][0xe1][\n]"
+2024-12-17 23:37:56,826 [main] DEBUG org.apache.http.wire -  << "[0x5][0x89])T7dxCC[0xda]<P[0xfb]{:[0xde]m[0x8b][0x98][0xf2]u[0x86][0x83]7>[0x8a]}-2[0xc9]hY[0xb1][0x1e]C[0xa0][0xa9][0xc9][0xe3]*_[0xce][0x2][0x9f]D[0x89][0xc5]^[0xdc]R[0xf][0xcf][0xc4]o#[0xad][0x82][0xa6][\n]"
+2024-12-17 23:37:56,826 [main] DEBUG org.apache.http.wire -  << "[0x7]R[0x10]c[0xc4][\r][0x80][0xd4] @[0xee]h[0xda]L[0x98][0xfd][0xa4]U[0xc2][0xc0][0x8d]3[0x1]][0xb5]G[0xe3][0xc4]V[0x11]3[0xef]#[0x15][0xf7][0x6][0xc4][0x84]b[0xff][0xa2][0x19][0x91][0xed][0xaf][0xf6][0xdb][0xf6][0xfc][0xfe][0xfe]V[0x9][0xc4][0xdd][0xac]6[0xb1]E[0xbf][0x97][0xf5][0xa6][0xbb][0xf7][0x93]V[0xe9][0xc2]}_[0x10]thR|[0xba]^[0xf]I[0xd1][0xb0][0x8c][0xd7][0xd1],c[0xda][0xd0][0xab]`[0xa9]F[0x9f]Em[0xbd][0x7][0x1d][0xb2]v[0x84][0xfe][0xe3]R[0xda]O[[0xc5][0xca]8>[0x88]YM8[0xf]1[0xe1][0xf7][0x90]WG}1[0xa1][0xf5],}[0x10]4[0xa3]E[0xe6][0xaa][0x8e]f[0xc][0x1c]u[0xdc][0xcc][0xb8]I[0x18][0xe6]EMS[0xfb][0xf7][0xab][0x0][0x9a]n[0x10][0xe7];L[0xd7]hW3!qP\Z[0x82][0xb4]%[0x1f][0x10]K[0xe3][0xd8]?[0xe2][0xde][0xfc][0xfc][0xb][0xf7][0xbf][0x99][0xc7][0xdf][0x8][0x0][0x0]"
+2024-12-17 23:37:56,827 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,827 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:56,827 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,827 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:56,828 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@28c86134
+2024-12-17 23:37:56,829 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,840 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,840 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=5 HTTP/1.1
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=5 HTTP/1.1[\r][\n]"
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:56,857 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=5 HTTP/1.1
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:56,858 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:56,882 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:56,882 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:56 GMT[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 997[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:37:56,883 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Etag: W/"932-JiHKfrNyHWI5zxhO4x1+znFqBcQ"[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Age: 1268[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:56,884 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38db0b69ee47b9-BOM[\r][\n]"
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=6884&min_rtt=6884&rtt_var=3442&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:56 GMT
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}
+2024-12-17 23:37:56,885 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 997
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:56,886 [main] DEBUG org.apache.http.headers - << Etag: W/"932-JiHKfrNyHWI5zxhO4x1+znFqBcQ"
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << Age: 1268
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38db0b69ee47b9-BOM
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:56,887 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=6884&min_rtt=6884&rtt_var=3442&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=188&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:56,888 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,888 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:56,888 [main] DEBUG org.apache.http.wire -  << "22f[\r][\n]"
+2024-12-17 23:37:56,888 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad]U[0xcb][0x8e][0x13]1[0x10][0xbc][0xef]W[0xb4]r[0xde][0xc3].[0xb0][0xb0][0xe1][0xf][0xf8][0x6][0xc4][0xc1][0xb1]{[0xa1]%?[0x6][0xbb][0x1d]!![0xfe][0x9d][0xf2][0xcc]l[0x92][0x1d]G"[0x92][0x91][0x92][0x83][0xad][0xc4][0xd5]U]][0xfd][0xf5][0x8e][0xe8]7[0xbe]D[0xbb]Z8q[0xbb][0xcf][0xf4]t[0xbf]\H;<?[0xae]'[0x15][0xf5][0x8c][0x8b]][0xa9][0xc5][0xca]$J?[0xab][0x90]&5a[0xb7][0xfe][0xc4][0xa6]0yVn[0xff][0xd3]\[0x19][0xb7][0xee][0xff][0x9][0xf0]n[0xb]pL[0xbe]Nj[0x94][0xb]q[\r][0xb4][0x1e]qPrb[0xd5]\[0x83]{1[0xbe][0xdc][0x88][0xf7]~[0x8b][0x7][0x1e][0x8e][0x3][0x19][0xa5][0xcc][0x19][0x80]8[0x3][0xec][0x17][0x99][0xaa]Tf[0x9e][0xa3][0x14]?[0xf4][0x1a]F[0xa5]#g[0x1]M[0x80][0x1][0xe8]Dz[0x90][0xdd][0xd3][0x16][0x8a][0xe7]F[0x19]2[0x8e][0xa4]([0xd3]U[0xf9]n[0xa7][0xf2]q[0xfb][0xbe]D+[0xae][0xd1]ij[0x19][0x9e][0xb8][0xe9][0xc6][0x83][0x82]}[0xda][0xa2]xS[0x9d][0x89]*s{[0xc][0x13]{[0xf9][0xce][0xd1][0x9][0xd9][0x14][0xb][0xe3]Jk^x[0xf2],l[0xfa][0x1f]U<w[0xce]D[0xbf]f~[0xb0][0x87][0xe5][0x9][0x98]B[0xde][0x1c]R[0x96]TL[0x80]Y [0x83][0xf1][0xd2][0xc][0xd3][0xea][0xc0][0xc7]X[[0xcb]R[0xf8]`c[0xf7][0x9d][0x87][0xb8][\r] jI!6[0xc3][0xea][0x10][0xd9][0xfd][0xc3][0xf6][0xfd][0x90]<[0x17][0x15][0x10][0xc6][0xf3]r[0xc9][0x84][0x94]#7[0xc1]][0xf2])s[0x18][0xc6][0xee]2&V[0xef][0xcd]2[0x88][0x97][\r]^[0xfc][0xd5]h[0x8b]C[0xb]&vr=[0xe]n[0x87][0xee][0xd2]G[0xe2]*[0xe8][0xb9][0xb1]c[0x8]][0xde]$'[0x89][0xa4]f~[0xc3][0xed],7[0xf8][0x1d]jq[0xf0]Pd[0xcb][0xa5][0xcc]![0x81][0x9b][0xc5][0xdf][0xcd]dc[0x5]ui[0xf4]b[0xac]x0[0xe][0xa8]l[0xd5][0x18][0xd5]xA5c[0xa6][0xdd]witd[0xf];[0xfd][0x10][0xdf][0x86][0xe3]LYjQ[0x8c]l)5`[0xaa][\r][0x88][0x87][0x4][0xba][0x9][0xf6][0x1e][0xe3][0xda][0xc5]UL[0x7]0=[0xed]0W[0xad][0x4]H[0xcb]Q[0xb0][0x1][0xca][0x84]H[0x86][0xa3][0xcb]i[0xe9][0xc][0xf2][0xef]rl[0x9e][0x18]L[0xd0]Ejp*[0x8b][0xa5][0x9b]#[0xd6][0xf4][0x18][0x84][0xed][0x82][0xcb][0xf1]A[0xda][0xa2][0xb9][0x1c][0xe2][0xaa][0xb3][0xc2][0xaf][0xcd]_[0xba]2[0x8f]\1[0x93]p[0xc4][0xae]x[0xeb][0xbf][0xb1]Nt[0xf9][0x15][0xe1]|[0xa6][0x8b]e[0x9f][0x1][0x93][0xe2][0xe0][0x2]||[0xe8][0x82][0xec][0x9c][0xd5][0xf3]vXp[0x9b][0xe2][0xaf][0x9]B[0xcd][0x95][0xb7]-[0xe0][0xbb]o[0x1][0xe7]o[0x89][0xbc]2[0x9][0x0][0x0]"
+2024-12-17 23:37:56,889 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,889 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:56,889 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,889 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:56,890 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@37b57b54
+2024-12-17 23:37:56,891 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,902 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Get connection for route {}->http://jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,902 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnectionOperator - Connecting to jsonplaceholder.typicode.com:80
+2024-12-17 23:37:56,910 [main] DEBUG org.apache.http.client.protocol.RequestAddCookies - CookieSpec selected: ignoreCookies
+2024-12-17 23:37:56,910 [main] DEBUG org.apache.http.client.protocol.RequestAuthCache - Auth cache not set in the context
+2024-12-17 23:37:56,910 [main] DEBUG org.apache.http.client.protocol.RequestTargetAuthentication - Target auth state: UNCHALLENGED
+2024-12-17 23:37:56,910 [main] DEBUG org.apache.http.client.protocol.RequestProxyAuthentication - Proxy auth state: UNCHALLENGED
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Attempt 1 to execute request
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Sending request: GET /todos?userId=10 HTTP/1.1
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.wire -  >> "GET /todos?userId=10 HTTP/1.1[\r][\n]"
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.wire -  >> "Accept: */*[\r][\n]"
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.wire -  >> "Host: jsonplaceholder.typicode.com[\r][\n]"
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.wire -  >> "Connection: Keep-Alive[\r][\n]"
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.wire -  >> "User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)[\r][\n]"
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.wire -  >> "Accept-Encoding: gzip,deflate[\r][\n]"
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.wire -  >> "[\r][\n]"
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.headers - >> GET /todos?userId=10 HTTP/1.1
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.headers - >> Accept: */*
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.headers - >> Host: jsonplaceholder.typicode.com
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.headers - >> Connection: Keep-Alive
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.headers - >> User-Agent: Apache-HttpClient/4.5.13 (Java/21.0.4)
+2024-12-17 23:37:56,911 [main] DEBUG org.apache.http.headers - >> Accept-Encoding: gzip,deflate
+2024-12-17 23:37:56,933 [main] DEBUG org.apache.http.wire -  << "HTTP/1.1 200 OK[\r][\n]"
+2024-12-17 23:37:56,933 [main] DEBUG org.apache.http.wire -  << "Date: Tue, 17 Dec 2024 18:07:56 GMT[\r][\n]"
+2024-12-17 23:37:56,933 [main] DEBUG org.apache.http.wire -  << "Content-Type: application/json; charset=utf-8[\r][\n]"
+2024-12-17 23:37:56,933 [main] DEBUG org.apache.http.wire -  << "Transfer-Encoding: chunked[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Connection: keep-alive[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "X-Powered-By: Express[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Limit: 1000[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Remaining: 996[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "X-Ratelimit-Reset: 1734457645[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Vary: Origin, Accept-Encoding[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Access-Control-Allow-Credentials: true[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Cache-Control: max-age=43200[\r][\n]"
+2024-12-17 23:37:56,934 [main] DEBUG org.apache.http.wire -  << "Pragma: no-cache[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "Expires: -1[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "X-Content-Type-Options: nosniff[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "Etag: W/"94b-Xf3KAbsgAZYN4iY133g5Nn+yLLE"[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "Content-Encoding: gzip[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "Via: 1.1 vegur[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "CF-Cache-Status: HIT[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "Age: 1268[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "Server: cloudflare[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "CF-RAY: 8f38db0bbaa94226-BOM[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "alt-svc: h3=":443"; ma=86400[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "server-timing: cfL4;desc="?proto=TCP&rtt=6894&min_rtt=6894&rtt_var=3447&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=189&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"[\r][\n]"
+2024-12-17 23:37:56,935 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.impl.conn.DefaultClientConnection - Receiving response: HTTP/1.1 200 OK
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << HTTP/1.1 200 OK
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Date: Tue, 17 Dec 2024 18:07:56 GMT
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Content-Type: application/json; charset=utf-8
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Transfer-Encoding: chunked
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Connection: keep-alive
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D"}]}
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1734457608&sid=e11707d5-02a7-43ef-b45e-2cf4d2036f7d&s=MLmbmnFQbkyIRy60yMS0J%2FZqxsxaCoBNZnHlnvb5ry0%3D
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << X-Powered-By: Express
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Limit: 1000
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Remaining: 996
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << X-Ratelimit-Reset: 1734457645
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Vary: Origin, Accept-Encoding
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Access-Control-Allow-Credentials: true
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Cache-Control: max-age=43200
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Pragma: no-cache
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Expires: -1
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << X-Content-Type-Options: nosniff
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Etag: W/"94b-Xf3KAbsgAZYN4iY133g5Nn+yLLE"
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Content-Encoding: gzip
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Via: 1.1 vegur
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << CF-Cache-Status: HIT
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Age: 1268
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << Server: cloudflare
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << CF-RAY: 8f38db0bbaa94226-BOM
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << alt-svc: h3=":443"; ma=86400
+2024-12-17 23:37:56,936 [main] DEBUG org.apache.http.headers - << server-timing: cfL4;desc="?proto=TCP&rtt=6894&min_rtt=6894&rtt_var=3447&sent=1&recv=3&lost=0&retrans=0&sent_bytes=0&recv_bytes=189&delivery_rate=0&cwnd=249&unsent_bytes=0&cid=0000000000000000&ts=0&x=0"
+2024-12-17 23:37:56,937 [main] DEBUG org.apache.http.impl.client.DefaultHttpClient - Connection can be kept alive indefinitely
+2024-12-17 23:37:56,937 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsing response as: application/json; charset=utf-8
+2024-12-17 23:37:56,937 [main] DEBUG org.apache.http.wire -  << "238[\r][\n]"
+2024-12-17 23:37:56,937 [main] DEBUG org.apache.http.wire -  << "[0x1f][0x8b][0x8][0x0][0x0][0x0][0x0][0x0][0x0][0x3][0xad][0x96]In[0x1b]A[0xc]E[0xf7]>[0x5][0xa1][0xb5][0x17][0xb2]3Y[0xb9]A[0xce][0x10]d[0xc1][0xee][0xa6][0x4][0x2]5[0xa9][0x6]A@[0x90][0xbb][0xe7]WkL[0x97][0x13][0xd8][0xa8][0x0][0x12][0xa0]nH[0xfd][0xeb][0x92][0x8f][0xfa][0xfe]@[0xf4][0x13]o[0xa2]UI[0x12][0xbf]M[0xab][0xaf][0xf4][0xb4]~<[0xdd][0xd1][0xf9][0xea][0xe5][0xe9]|[0x99]5[0x1b][0xc1][0x9d]U[0xc9]4[0x96][0xa0][0x93]f[0xce]BI[0xf6]E[0x89][0x8d][0xee][0xb][[0xda][0x96][0x1d][0x93]e[0xf5]Q[0xd2][0xea][0xfc][0xc3][0xd1][0xdb]`$K}[0xdc][0x96]M[0x12][0xdc][0xfe][0xf5][0xf8][0x6][0xe5][0xe7][0xa5][0xb2][0xba][0x83][0xb8][0x8c]gSb[0x9][0x82]c[0xd8]}[0x11][0x92]L[0x8c]C[0xa9]1[0xc5][0x92]8[0xb5][0xaf])[0xe7]X[0xde],[0xfc]a)[0xec][0xad][0xd3]D[0xae][0x18][0xc3]$[0x10][0xb9][0xd8][0x9d]4eucV[0xdf]+[0xf9]q)i[0xbd][0x11]<[0x9c][0x13]Y?)[0x5][0x89][[0x89][0xe2][0xa0]X?[0xa7][0xa0][0xa3]r[0xd6][0xfe][0x90]?-[0x85][0xf][0xde][0x94]PK[0x9b]`o[0x7][0xdf]I[0xad]O[0xa8][0xf3]D[0x93]7>[0xea]P[0x12]1RVB[0x6][0x12]yN[0xbf][0xfb][0x1c][0x9f][0x97][0xe7][0x90]c0:[0xf2][0xe0][0x9][0xfe]=![0xc][0x14][0xba][[0xe6][0xcb]Rf[0xf4][0xae][0xb6]pq[0xb9][0xc4][0xb3][0xad][0xe0][0xab][0xe7][0xd2][0x9f][0xed]K[0x93][0xad][0x18]r[0xde][0xd1] [0x9c]Y[0xaa][0xa7][0xde][0xbe][0xd9]4~[0x8a][0x9]hRE[0x91]0[0x17][0xd7]b[0xda][0xbf][0x84][0xf7][0xe][0xad][0xcd]z[0xa9][0xc5][0xe3]X[0x12]#)J[0xea]0[0x80]%e[0xbf]T=J[0x1c]+)[0xd4];[0xe9][0x1d][0xcc]M[0xc3]"H[0x84]KK[0xe6][0xca][0x82][0xdb]D[0xd2]ih[0xe7]$[0xd4][0x6][0x1][0xaf][0xe8][0xf4]u[0xa1][0xdb]p[0x5][0x8e][0x98][0xa3][0x12]{O[0xd6][0xb0][\n]"
+2024-12-17 23:37:56,937 [main] DEBUG org.apache.http.wire -  << "@[0xc2]x[0xa4]k3-[0x92]8%v[0x9b][0xb5][0xde]^[0xdb]4[0xcc][0x8a][0x12]A[0xaa]I[0x6][0x5]&[0xee]KRy-[0x0][0xa9][0xca]%[0x10][0xbe][0x8f][0x8d]{[0xa3]hPV[0xd1][0x81]8[0xe][0x12]=l[0xe7]k[0xfa][0xd2]m[0xba][0x81][0xd7][0xc9][0xb4][0x1c][0xa9][0xfa][0x3][0xa0]!e[0xe0][0x9f][0xaf][0xfe][0xe7]V[0xf9]_Eo[0x98][0xf5]'L[0xe0][0x19]/[0xac]DxF[0xf]h][0x1a][0xaf]z~[0x8f]f[0x3][0xb0]{H[0xef][0x8b][0x7]_[0x86][0xda][0xf6]\[0x83][0x98][0xd7]d[0xaf]bC14[0xd0]y[0xae]*[0x94][0xe7]F[0xbe][0xc2][0xba]W[0xac][0xe1][0x99][0xab];[0x1e][0x95][0x8c]pb[0xc][0x16]`[0x1d]u[0xfc][0xc5][0xd8]9[0xee][0xc4][0xc9][0xf3][0xba][0x1][0x9a][0x6][0xe0][0x8c][0x18][0xb][0xb6]6[0xcf][0xdd]&[0x84][0xe5]6[0xeb][0xc3][0x8f][0xdf][0x16][0x9f][0x1a]nK[0x9][0x0][0x0]"
+2024-12-17 23:37:56,937 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,937 [main] DEBUG org.apache.http.wire -  << "0[\r][\n]"
+2024-12-17 23:37:56,937 [main] DEBUG org.apache.http.wire -  << "[\r][\n]"
+2024-12-17 23:37:56,937 [main] DEBUG io.restassured.internal.RestAssuredHttpBuilder - Parsed data to instance of: class org.apache.http.conn.EofSensorInputStream
+2024-12-17 23:37:56,938 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Releasing connection org.apache.http.impl.conn.ManagedClientConnectionImpl@6794ac0b
+2024-12-17 23:37:56,938 [main] DEBUG org.apache.http.impl.conn.BasicClientConnectionManager - Connection can be kept alive indefinitely
