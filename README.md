@@ -33,6 +33,18 @@ Base URL
 Browser type
 Test environment details
 
+5.Dependancies updation :
+Right-click on the project in the Project Explorer.
+
+Select Maven > Update Project.
+
+Alternatively, you can also press Alt + F5 after selecting the project.
+In the Update Maven Project dialog that appears:
+
+Make sure Force Update of Snapshots/Releases is checked.
+Click OK.
+This will force Maven to re-download all dependencies and ensure that the latest versions are used.
+
 ---
 
 ## Running the Tests
