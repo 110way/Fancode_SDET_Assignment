@@ -82,11 +82,11 @@ Open emailable-report.html in a browser to view the results.
 
 ---
 ## Technologies Used
-Java: Programming language
-Selenium WebDriver: For test automation
-TestNG: Test framework
-Maven: Build and dependency management
-Git: Version control
+**Java**: Programming language
+**Selenium WebDriver**: For test automation
+**TestNG**: Test framework
+**Maven**: Build and dependency management
+**Git**: Version control
 
 
 
